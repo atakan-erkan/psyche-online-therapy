@@ -1,0 +1,23 @@
+#banner-caption h1 {
+  font-size: 64px;
+}
+#banner-caption h1 span {
+  color: #3168f1;
+}
+#page-wrapper {
+  padding-top: 100px !important;
+
+  min-height: 100vh !important;
+}
+
+.text1 {
+  font-size: 20px;
+}
+.slick-track {
+  opacity: 1;
+  width: 1320px;
+  transform: translate3d(0px, 0px, 0px);
+}
+.slick-active {
+  width: 440px;
+}
