@@ -94,6 +94,7 @@
 
   .nav-menu.active {
     left: 0;
+    display: block;
   }
 
   .nav-navbar-item {

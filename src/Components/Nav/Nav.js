@@ -63,12 +63,12 @@ function Navbar() {
           </li>
           <li className="nav-navbar-item entry2">
             <a href="/login" onClick={closeMenu}>
-              Log In
+              Giriş Yapın
             </a>
           </li>
           <li className="nav-navbar-item entry2">
             <a href="/signin" onClick={closeMenu}>
-              Sign In
+              Kayıt Olun
             </a>
           </li>
         </ul>
