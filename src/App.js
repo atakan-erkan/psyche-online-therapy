@@ -8,6 +8,7 @@ import FAQ from "./Components/routes/FAQ";
 import LogIn from "./Components/routes/LogIn";
 import SignIn from "./Components/routes/SignIn";
 import Home from "./Components/routes/Home";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         </Routes>
       </Router>
       <Nav />
+      <Footer />
     </div>
   );
 };
