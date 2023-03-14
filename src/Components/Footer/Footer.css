@@ -1,0 +1,148 @@
+.footer-info {
+  background-color: #175c4c;
+}
+
+.footer-info-title {
+  font-size: 21px;
+  color: #fff;
+  line-height: 27px;
+}
+
+.footer-info-text {
+  font-size: 18px;
+  color: #fff;
+  line-height: 25px;
+}
+
+.footer-info-button {
+  font-size: 18px;
+  line-height: 25px;
+  padding: 15px 100px;
+  border-radius: 30px;
+  font-weight: 700;
+  border: none;
+  color: #322460;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.footer-info-button:hover {
+  outline: none;
+  background-color: #322460;
+  color: #fff;
+}
+
+.footer-info-button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-info-title {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .footer-info-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .footer-info-button {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+}
+/* Footer */
+#footer {
+  background: #fafafa;
+  margin-top: 100px;
+}
+
+.footer-nav-title {
+  font-weight: 500;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  width: 100%;
+}
+
+.footer-company-description {
+  max-width: 350px;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+#footer .nav {
+  margin-top: 10px;
+  font-size: 0.875rem;
+}
+
+#footer .nav .nav-link {
+  color: #000;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#footer .nav .nav-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#footer .copyright {
+  background: #3268f3;
+  color: #fff !important;
+}
+
+#footer .social-links {
+  margin: 0;
+}
+
+#footer .social-links img {
+  width: 100%;
+}
+
+#footer .social-links .nav-link {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #3268f3;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 4px;
+  display: flex;
+  opacity: 0.6;
+  transition: opacity 0.3s linear;
+}
+
+#footer .social-links .nav-link:hover {
+  opacity: 1;
+}
+
+#footer .btn-outline-light .btn-icon {
+  margin-right: 10px;
+}
+
+#footer .btn-outline-light:hover .btn-icon svg path {
+  fill: #212529;
+}
+
+.copyright-seciton {
+  padding-top: 16px;
+  border-top: 1px solid #ebebeb;
+  color: #848484;
+  padding-bottom: 16px;
+}
+
+.footer-notice {
+  color: #848484;
+  font-size: 0.875rem;
+}
+
+.footer-col-hiwell {
+  display: flex;
+  flex-direction: column;
+}
