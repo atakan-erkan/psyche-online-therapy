@@ -8,7 +8,7 @@ import FAQ from "./Components/routes/FAQ";
 import LogIn from "./Components/routes/LogIn";
 import SignIn from "./Components/routes/SignIn";
 import Home from "./Components/routes/Home";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (

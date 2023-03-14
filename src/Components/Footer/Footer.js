@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer id="footer">
       <hr />
-      <div class="container py-5 classname111">
+      <div class="container py-5">
         <div class="row">
           <div class="col-md-4">
             <div class="footer-logo">
@@ -20,7 +20,7 @@ function Footer() {
             </div>
             <div class="footer-company-description mt-4">
               500'den fazla uzman psikolog kadromuzla ihtiyacınız olan her
-              konuda anında online terapi ve psikolojik danışmanlık! ATAKAN!
+              konuda anında online terapi ve psikolojik danışmanlık!
             </div>
 
             <div class="footer-nav-title mt-4">Uygulamayı indirin</div>
