@@ -9,6 +9,7 @@ import LogIn from "./Components/routes/LogIn";
 import SignIn from "./Components/routes/SignIn";
 import Home from "./Components/routes/Home";
 import Footer from "./Components/Footer/Footer";
+import FooterInfo from "./Components/Footer/FooterInfo";
 
 const App = () => {
   return (
@@ -25,8 +26,8 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
         </Routes>
       </Router>
-
       <Footer />
+      <FooterInfo />
     </div>
   );
 };

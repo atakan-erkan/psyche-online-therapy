@@ -85,7 +85,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section id="nasil-calisir">
         <div className="container pb-5">
           <div className="row">
             <div className="col">

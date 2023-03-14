@@ -37,8 +37,8 @@ function Navbar() {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu mt-3"}>
           <li className="nav-navbar-item ">
-            <a href="/" onClick={closeMenu}>
-              Anasayfa
+            <a href="/#nasil-calisir" onClick={closeMenu}>
+              Nasıl Çalışır?
             </a>
           </li>
           <li className="nav-navbar-item ">
