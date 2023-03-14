@@ -3,8 +3,8 @@
   "name": "Daha iyi hissetmeye bugün başlayın",
   "icons": [
     {
-      "src": "psyche.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "psyche.png",
+      "sizes": "64x64 57x57 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
