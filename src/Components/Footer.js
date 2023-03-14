@@ -20,7 +20,7 @@ function Footer() {
             </div>
             <div class="footer-company-description mt-4">
               500'den fazla uzman psikolog kadromuzla ihtiyacınız olan her
-              konuda anında online terapi ve psikolojik danışmanlık!
+              konuda anında online terapi ve psikolojik danışmanlık! ATAKAN!
             </div>
 
             <div class="footer-nav-title mt-4">Uygulamayı indirin</div>
