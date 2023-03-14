@@ -23,32 +23,178 @@ function Tests() {
       <section>
         <div className="container mt-5">
           <div className="row">
-            <div className="col-sm">
+            <div className="col-sm-3 mt-3">
               <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
+                <img
+                  src="img/anxiety-test.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Anksiyete (Kaygı) Testi</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
+                    bozukluğunun taranması ve şiddetinin ölçülmesi için
+                    kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
+                    anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
+                    maddeye sahiptir.
                   </p>
                   <a href="/#" class="btn btn-primary">
-                    Go somewhere
+                    Teste Başla
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-sm">
+            <div className="col-sm-3 mt-3">
               <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
+                <img
+                  src="img/anxiety-test.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Anksiyete (Kaygı) Testi</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
+                    bozukluğunun taranması ve şiddetinin ölçülmesi için
+                    kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
+                    anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
+                    maddeye sahiptir.
                   </p>
                   <a href="/#" class="btn btn-primary">
-                    Go somewhere
+                    Teste Başla
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-3 mt-3">
+              <div class="card">
+                <img
+                  src="img/anxiety-test.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Anksiyete (Kaygı) Testi</h5>
+                  <p class="card-text">
+                    Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
+                    bozukluğunun taranması ve şiddetinin ölçülmesi için
+                    kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
+                    anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
+                    maddeye sahiptir.
+                  </p>
+                  <a href="/#" class="btn btn-primary">
+                    Teste Başla
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-3 mt-3">
+              <div class="card">
+                <img
+                  src="img/anxiety-test.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Anksiyete (Kaygı) Testi</h5>
+                  <p class="card-text">
+                    Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
+                    bozukluğunun taranması ve şiddetinin ölçülmesi için
+                    kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
+                    anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
+                    maddeye sahiptir.
+                  </p>
+                  <a href="/#" class="btn btn-primary">
+                    Teste Başla
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-3 mt-3">
+              <div class="card">
+                <img
+                  src="img/anxiety-test.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Anksiyete (Kaygı) Testi</h5>
+                  <p class="card-text">
+                    Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
+                    bozukluğunun taranması ve şiddetinin ölçülmesi için
+                    kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
+                    anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
+                    maddeye sahiptir.
+                  </p>
+                  <a href="/#" class="btn btn-primary">
+                    Teste Başla
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-3 mt-3">
+              <div class="card">
+                <img
+                  src="img/anxiety-test.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Anksiyete (Kaygı) Testi</h5>
+                  <p class="card-text">
+                    Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
+                    bozukluğunun taranması ve şiddetinin ölçülmesi için
+                    kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
+                    anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
+                    maddeye sahiptir.
+                  </p>
+                  <a href="/#" class="btn btn-primary">
+                    Teste Başla
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-3 mt-3">
+              <div class="card">
+                <img
+                  src="img/anxiety-test.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Anksiyete (Kaygı) Testi</h5>
+                  <p class="card-text">
+                    Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
+                    bozukluğunun taranması ve şiddetinin ölçülmesi için
+                    kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
+                    anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
+                    maddeye sahiptir.
+                  </p>
+                  <a href="/#" class="btn btn-primary">
+                    Teste Başla
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-3 mt-3">
+              <div class="card">
+                <img
+                  src="img/anxiety-test.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Anksiyete (Kaygı) Testi</h5>
+                  <p class="card-text">
+                    Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
+                    bozukluğunun taranması ve şiddetinin ölçülmesi için
+                    kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
+                    anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
+                    maddeye sahiptir.
+                  </p>
+                  <a href="/#" class="btn btn-primary">
+                    Teste Başla
                   </a>
                 </div>
               </div>
