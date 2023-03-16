@@ -30,9 +30,9 @@ function Navbar() {
         </a>
         <div className="hamburger" onClick={handleClick}>
           {click ? (
-            <FaTimes size={30} style={{ color: "#ffffff" }} />
+            <FaTimes size={30} style={{ color: "#1f2248" }} />
           ) : (
-            <FaBars size={30} style={{ color: "#ffffff" }} />
+            <FaBars size={30} style={{ color: "#1f2248" }} />
           )}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu mt-3"}>
