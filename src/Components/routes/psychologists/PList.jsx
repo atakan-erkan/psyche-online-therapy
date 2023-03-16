@@ -5,17 +5,17 @@ const PList = () => {
   const [users, setUsers] = useState([]);
 
   const fetchUsers = async () => {
-    const response = await axios.get("https://randomuser.me/api/?results=8");
+    const response = await axios.get("https://randomuser.me/api/?results=120");
     setUsers(response.data.results);
   };
   useEffect(() => {
     fetchUsers();
   }, []);
   return (
-    <div className="p-list">
-      <ul>
+    <div className="container mt-5">
+      <ul className="row">
         {users.map((user, i) => (
-          <li key={i}>
+          <li className="col-sm-3" key={i}>
             <SingleP user={user} />
           </li>
         ))}
