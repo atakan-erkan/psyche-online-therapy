@@ -15,6 +15,7 @@
   border-radius: 50px;
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px;
   transition: 0.4s;
+  width: 98.9%;
 }
 .header .nav-navbar {
   display: flex;
