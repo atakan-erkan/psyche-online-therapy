@@ -26,7 +26,7 @@ function FooterInfo() {
               Yardım
             </button>
           </div>
-          <div class="col-12 mt-2">
+          <div className="col-12 mt-2">
             <div className="footer-info-text">© Psyche</div>
           </div>
         </div>
