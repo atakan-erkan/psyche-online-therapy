@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e601cde2.css",
+    "main.js": "/static/js/main.f7d6a3cb.js",
+    "static/js/787.14b2a1c6.chunk.js": "/static/js/787.14b2a1c6.chunk.js",
+    "static/media/psychelogo.png": "/static/media/psychelogo.a8a0029dbf7540f5f512.png",
+    "index.html": "/index.html",
+    "main.e601cde2.css.map": "/static/css/main.e601cde2.css.map",
+    "main.f7d6a3cb.js.map": "/static/js/main.f7d6a3cb.js.map",
+    "787.14b2a1c6.chunk.js.map": "/static/js/787.14b2a1c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e601cde2.css",
+    "static/js/main.f7d6a3cb.js"
+  ]
+}
