@@ -2,12 +2,16 @@
   font-size: 64px;
 }
 #banner-caption h1 span {
-  color: #3168f1;
+  color: #175c4c;
 }
 #page-wrapper {
   padding-top: 100px !important;
 
   min-height: 100vh !important;
+}
+.btn-primary {
+  background-color: #175c4c;
+  border-color: #175c4c;
 }
 
 .text1 {

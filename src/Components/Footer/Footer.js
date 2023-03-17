@@ -14,12 +14,12 @@ function Footer() {
                   height="150"
                   loading="lazy"
                   src="img/PSYCHE-2.png"
-                  alt="hiwell logo"
+                  alt="psyche logo"
                 />
               </a>
             </div>
             <div className="footer-company-description mt-4">
-              500'den fazla uzman psikolog kadromuzla ihtiyacınız olan her
+              100'den fazla uzman psikolog kadromuzla ihtiyacınız olan her
               konuda anında online terapi ve psikolojik danışmanlık!
             </div>
           </div>
