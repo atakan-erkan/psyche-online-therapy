@@ -6,6 +6,7 @@
   background-color: #f9fbff;
   border: 0;
   border-radius: 60px 24px 60px 24px;
+  box-shadow: -5px 5px 10px 0px #0000002e;
 }
 .card-psy img {
   position: absolute;
