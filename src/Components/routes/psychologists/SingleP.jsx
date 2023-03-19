@@ -7,7 +7,7 @@ const SingleP = ({ user }) => {
   };
   return (
     <div>
-      <div className="card card-psy raunded">
+      <div className="card">
         <img src={user.picture.large} className="card-img-top" alt="..." />
         <div className="card-body">
           <a
