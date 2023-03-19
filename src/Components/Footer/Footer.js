@@ -13,7 +13,7 @@ function Footer() {
                   width="150"
                   height="150"
                   loading="lazy"
-                  src="img/PSYCHE-2.png"
+                  src="img/PSYCHE.png"
                   alt="psyche logo"
                 />
               </a>

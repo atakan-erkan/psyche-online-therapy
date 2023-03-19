@@ -55,18 +55,18 @@ function Tests() {
                     </div>
                   </div>
                 </div>
+
                 <div className="col-12 col-sm-4 mt-4">
                   <div class="d-flex flex-column flex-sm-row align-items-center border border-secondary rounded p-3 test-list-box">
                     <div class="d-flex ml-4 ml-3 flex-column test-list-description">
                       <h2 class="" id="heading0">
-                        Anksiyete (Kaygı) Testi
+                        Depresyon Testi
                       </h2>
                       <div class="test-list-summary">
-                        Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
-                        bozukluğunun taranması ve şiddetinin ölçülmesi için
-                        kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
-                        anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
-                        maddeye sahiptir.
+                        Hasta Sağlık Anketi 9 (PHQ-9) depresyonun taranması ve
+                        şiddetinin ölçülmesi için kullanılan bir psikoloji
+                        testidir. Dokuz maddeyle hızlı ve kolay bir şekilde
+                        tarama yapan başarılı bir depresyon ölçeğidir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
                         <a
@@ -80,7 +80,11 @@ function Tests() {
 
                     <div class="test-list-image" aria-labelledby="heading0">
                       <a href="testler/anksiyete-(kaygi)-testi.html">
-                        <img src="img/anxiety-test.svg" alt="" loading="lazy" />
+                        <img
+                          src="img/depression-test.svg"
+                          alt=""
+                          loading="lazy"
+                        />
                       </a>
                     </div>
                   </div>
@@ -179,14 +183,11 @@ function Tests() {
                   <div class="d-flex flex-column flex-sm-row align-items-center border border-secondary rounded p-3 test-list-box">
                     <div class="d-flex ml-4 ml-3 flex-column test-list-description">
                       <h2 class="" id="heading0">
-                        Anksiyete (Kaygı) Testi
+                        Stres Testi
                       </h2>
                       <div class="test-list-summary">
-                        Yaygın Kaygı Bozukluğu 7 (GAD-7), yaygın anksiyete
-                        bozukluğunun taranması ve şiddetinin ölçülmesi için
-                        kullanılan bir psikoloji testidir. GAD-7, çeşitli yaygın
-                        anksiyete bozukluğu belirtilerinin şiddetini ölçen yedi
-                        maddeye sahiptir.
+                        DASS21, son 1 haftadır mevcut olan stres belirtilerini
+                        ölçen 7 maddeyi içeren bir araçtır.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
                         <a
@@ -200,7 +201,7 @@ function Tests() {
 
                     <div class="test-list-image" aria-labelledby="heading0">
                       <a href="testler/anksiyete-(kaygi)-testi.html">
-                        <img src="img/anxiety-test.svg" alt="" loading="lazy" />
+                        <img src="img/stress-test.svg" alt="" loading="lazy" />
                       </a>
                     </div>
                   </div>
