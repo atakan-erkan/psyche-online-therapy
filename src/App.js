@@ -7,7 +7,7 @@ import Tests from "./Components/routes/Tests";
 import FAQ from "./Components/routes/FAQ";
 import LogIn from "./Components/routes/LogIn";
 import SignIn from "./Components/routes/SignIn";
-import Home from "./Components/routes/Home";
+import Home from "./Components/routes/home/Home";
 import Footer from "./Components/Footer/Footer";
 import FooterInfo from "./Components/Footer/FooterInfo";
 

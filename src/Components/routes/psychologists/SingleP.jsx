@@ -1,24 +1,42 @@
 import React, { useEffect } from "react";
+import "./Psychologists.css";
 
 const SingleP = ({ user }) => {
   const handleClick = () => {
     <div>{user}</div>;
   };
   return (
-    <div className=" container mt-5">
-      <div className="row">
-        <div className="col-sm-12 text-center">
-          <img className="rounded" src={user.picture.large} alt="" />
-          <h3>
-            Dr. {user.name.first} {user.name.last}@{user.login.username}
-          </h3>
-          <h5>
+    <div>
+      <div className="card card-psy raunded">
+        <img src={user.picture.large} className="card-img-top" alt="..." />
+        <div className="card-body">
+          <a
+            href="/#"
+            className=""
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <h5 className="card-title fw-bolder">
+              {user.name.first} {user.name.last}
+            </h5>
+          </a>
+          <p className="text-primary">Uzman Klinik Psikolog</p>
+          <h6 className="card-text">
             {user.location.city} | {user.location.country}
-          </h5>
-          <p>{user.email}</p>
-          <p>{user.phone}</p>
-          <p>Akademik Yıl ({user.registered.age})</p>
-          <button onClick={() => handleClick()}>DAHA FAZLA TANI</button>
+          </h6>
+          <h6 className="fw-bolder">Hakkında</h6>
+          <p className="card-text card-text-wrap">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, beatae.
+          </p>
+          <p className="card-text mb-4">Akademik Yıl ({user.registered.age})</p>
+          <h6 className="fw-bolder">İletişim</h6>
+          <i className="fa-sharp fa-solid fa-at"></i>
+          <p className="card-text">{user.email}</p>
+          <i className="fa-solid fa-phone"></i>
+          <p className="card-text mb-4">{user.phone}</p>
+          <a href="#/" className="btn btn-primary">
+            DAHA FAZLA
+          </a>
         </div>
       </div>
     </div>
