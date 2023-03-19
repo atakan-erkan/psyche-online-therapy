@@ -25,7 +25,7 @@ const Home = () => {
                 </a>
               </div>
               <div className="col-lg-6">
-                <img src="img/PSYCHE-2.png" className="w-100" alt="logo" />
+                <img src="img/PSYCHE.png" className="w-100" alt="logo" />
               </div>
             </div>
           </div>
