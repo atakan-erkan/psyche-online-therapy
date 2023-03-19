@@ -14,9 +14,9 @@ const PList = () => {
   }, []);
   return (
     <div className="container mt-5 psikolog">
-      <div className="row filter-list justify-content-center">
+      <div className="row justify-content-center">
         {users.map((user, i) => (
-          <div className="col-lg-3 col-md-4 filter-item">
+          <div className="col-lg-3 col-md-4">
             <div key={i}>
               <SingleP user={user} />
             </div>
