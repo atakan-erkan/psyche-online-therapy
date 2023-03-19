@@ -1,0 +1,37 @@
+.card-psy {
+  position: relative;
+  padding: 30px;
+  padding-top: 75px;
+  margin-top: 75px;
+  background-color: #f9fbff;
+  border: 0;
+  border-radius: 60px 24px 60px 24px;
+}
+.card-psy img {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 50%;
+  margin-left: -55px;
+  top: -55px;
+  border-radius: 50%;
+  box-shadow: -5px 5px 10px 0px #0000002e;
+}
+.card-text-wrap {
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.filter-list {
+  position: relative;
+}
+.psikolog {
+  padding-top: 100px !important;
+
+  min-height: 100vh !important;
+}
+.btn {
+  padding: 0.375rem 2rem;
+}
