@@ -13,16 +13,16 @@ const PList = () => {
     fetchUsers();
   }, []);
   return (
-    <div className="container mt-5">
-      <ul className="row">
+    <div className="container mt-5 psikolog">
+      <div className="row justify-content-center">
         {users.map((user, i) => (
-          <div className="col-12 col-sm-4 mt-4">
-            <li key={i}>
+          <div className="col-lg-3 col-md-4 mt-5">
+            <div key={i}>
               <SingleP user={user} />
-            </li>
+            </div>
           </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
