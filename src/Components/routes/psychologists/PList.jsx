@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SingleP from "./SingleP";
+import "./Psychologists.css";
 const PList = () => {
   const [users, setUsers] = useState([]);
 
@@ -15,9 +16,11 @@ const PList = () => {
     <div className="container mt-5">
       <ul className="row">
         {users.map((user, i) => (
-          <li className="col-sm-3" key={i}>
-            <SingleP user={user} />
-          </li>
+          <div className="col-12 col-sm-4 mt-4">
+            <li key={i}>
+              <SingleP user={user} />
+            </li>
+          </div>
         ))}
       </ul>
     </div>

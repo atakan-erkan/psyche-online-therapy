@@ -1,24 +1,27 @@
 import React, { useEffect } from "react";
+import "./Psychologists.css";
 
 const SingleP = ({ user }) => {
   const handleClick = () => {
     <div>{user}</div>;
   };
   return (
-    <div className=" container mt-5">
-      <div className="row">
-        <div className="col-sm-12 text-center">
-          <img className="rounded" src={user.picture.large} alt="" />
-          <h3>
-            Dr. {user.name.first} {user.name.last}@{user.login.username}
+    <div className="card">
+      <div className="user-info">
+        <img className="" src={user.picture.large} alt="" />
+        <div className="card-body">
+          <h3 className="card-title">
+            Dr. {user.name.first} {user.name.last}
           </h3>
-          <h5>
+          <h6 className="title">@{user.login.username}</h6>
+          <h5 className="card-text">
             {user.location.city} | {user.location.country}
           </h5>
-          <p>{user.email}</p>
-          <p>{user.phone}</p>
-          <p>Akademik Yıl ({user.registered.age})</p>
-          <button onClick={() => handleClick()}>DAHA FAZLA TANI</button>
+          <p className="card-text">{user.email}</p>
+          <p className="card-text">{user.phone}</p>
+          <button className="btn btn-primary" onClick={() => handleClick()}>
+            DAHA FAZLA TANI
+          </button>
         </div>
       </div>
     </div>

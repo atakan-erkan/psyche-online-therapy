@@ -1,0 +1,42 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.title {
+  color: grey;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.aa {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+img {
+  height: 40%;
+  border-radius: 50%;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+p {
+  font-size: 1rem;
+}
+button {
+  font-size: 1.2rem;
+}
