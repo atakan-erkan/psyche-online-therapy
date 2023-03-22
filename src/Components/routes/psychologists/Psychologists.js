@@ -3,7 +3,7 @@ import PList from "./PList";
 
 function Psychologists() {
   return (
-    <div className="container py-5">
+    <div className="">
       <PList />
     </div>
   );

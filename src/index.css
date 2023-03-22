@@ -12,6 +12,9 @@ body {
   height: 100%;
   scroll-behavior: smooth;
 }
+.text-right {
+  text-align: right !important;
+}
 
 .fw-bold {
   font-weight: 700 !important;
@@ -34,7 +37,6 @@ body {
   font-family: "Sofia Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.2rem;
   line-height: 1.2;
 }
 
