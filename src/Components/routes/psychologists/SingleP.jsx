@@ -7,7 +7,7 @@ const SingleP = ({ user }) => {
   };
   return (
     <div>
-      <div className="card">
+      <div className="card card-psy card-review raunded">
         <img src={user.picture.large} className="card-img-top" alt="..." />
         <div className="card-body">
           <a
@@ -24,7 +24,7 @@ const SingleP = ({ user }) => {
             {user.location.city} | {user.location.country}
           </h6>
           <h6 className="fw-bolder">Hakkında</h6>
-          <p className="card-text card-text-wrap">
+          <p className="card-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consectetur, beatae.
           </p>
