@@ -39,17 +39,14 @@ function Tests() {
                         maddeye sahiptir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a
-                          href="testler/anksiyete-(kaygi)-testi.html"
-                          class="btn btn-rounded btn-primary"
-                        >
+                        <a href="/tests" class="btn btn-rounded btn-primary">
                           Teste Başla
                         </a>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="testler/anksiyete-(kaygi)-testi.html">
+                      <a href="/tests">
                         <img src="img/anxiety-test.svg" alt="" loading="lazy" />
                       </a>
                     </div>
@@ -69,17 +66,14 @@ function Tests() {
                         tarama yapan başarılı bir depresyon ölçeğidir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a
-                          href="testler/anksiyete-(kaygi)-testi.html"
-                          class="btn btn-rounded btn-primary"
-                        >
+                        <a href="/tests" class="btn btn-rounded btn-primary">
                           Teste Başla
                         </a>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="testler/anksiyete-(kaygi)-testi.html">
+                      <a href="/tests">
                         <img
                           src="img/depression-test.svg"
                           alt=""
@@ -103,17 +97,14 @@ function Tests() {
                         maddeye sahiptir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a
-                          href="testler/anksiyete-(kaygi)-testi.html"
-                          class="btn btn-rounded btn-primary"
-                        >
+                        <a href="/tests" class="btn btn-rounded btn-primary">
                           Teste Başla
                         </a>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="testler/anksiyete-(kaygi)-testi.html">
+                      <a href="/tests">
                         <img src="img/anxiety-test.svg" alt="" loading="lazy" />
                       </a>
                     </div>
@@ -133,17 +124,14 @@ function Tests() {
                         maddeye sahiptir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a
-                          href="testler/anksiyete-(kaygi)-testi.html"
-                          class="btn btn-rounded btn-primary"
-                        >
+                        <a href="/tests" class="btn btn-rounded btn-primary">
                           Teste Başla
                         </a>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="testler/anksiyete-(kaygi)-testi.html">
+                      <a href="/tests">
                         <img src="img/anxiety-test.svg" alt="" loading="lazy" />
                       </a>
                     </div>
@@ -163,17 +151,14 @@ function Tests() {
                         maddeye sahiptir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a
-                          href="testler/anksiyete-(kaygi)-testi.html"
-                          class="btn btn-rounded btn-primary"
-                        >
+                        <a href="/tests" class="btn btn-rounded btn-primary">
                           Teste Başla
                         </a>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="testler/anksiyete-(kaygi)-testi.html">
+                      <a href="/tests">
                         <img src="img/anxiety-test.svg" alt="" loading="lazy" />
                       </a>
                     </div>
@@ -190,17 +175,14 @@ function Tests() {
                         ölçen 7 maddeyi içeren bir araçtır.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a
-                          href="testler/anksiyete-(kaygi)-testi.html"
-                          class="btn btn-rounded btn-primary"
-                        >
+                        <a href="/tests" class="btn btn-rounded btn-primary">
                           Teste Başla
                         </a>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="testler/anksiyete-(kaygi)-testi.html">
+                      <a href="/tests">
                         <img src="img/stress-test.svg" alt="" loading="lazy" />
                       </a>
                     </div>
