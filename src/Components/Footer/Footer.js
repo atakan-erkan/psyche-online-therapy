@@ -129,7 +129,7 @@ function Footer() {
                 src="img/qrcode_www.psychetherapy.online.png"
                 width="70"
                 height="81"
-                alt="Etbis QR"
+                alt="PSYCHE QR"
                 className="img-fluid"
               />
             </div>
