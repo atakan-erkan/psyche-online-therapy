@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Psychologists.css";
 
 const SingleP = ({ user }) => {
-  const handleClick = () => {
-    <div>{user}</div>;
-  };
   return (
     <div>
       <div className="card single">
