@@ -29,7 +29,7 @@
 
 .footer-info-button:hover {
   outline: none;
-  background-color: #322460;
+  background-color: gray;
   color: #fff;
 }
 
