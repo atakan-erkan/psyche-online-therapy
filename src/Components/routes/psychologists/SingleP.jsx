@@ -7,8 +7,12 @@ const SingleP = ({ user }) => {
   };
   return (
     <div>
-      <div className="card">
-        <img src={user.picture.large} className="card-img-top" alt="..." />
+      <div className="card single">
+        <img
+          src={user.picture.large}
+          className="card-img-top rounded-circle shadow-4-strong"
+          alt="..."
+        />
         <div className="card-body">
           <a
             href="/#"

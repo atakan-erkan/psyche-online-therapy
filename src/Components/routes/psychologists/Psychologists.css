@@ -3,3 +3,9 @@
 
   min-height: 100vh !important;
 }
+.single img {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
