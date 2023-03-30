@@ -16,8 +16,8 @@ const PList = () => {
     <div className="container psikolog">
       <div className="row justify-content-center">
         {users.map((user, i) => (
-          <div className="col-lg-3 col-md-4 mt-5">
-            <div key={i}>
+          <div key={i} className="col-lg-3 col-md-4 mt-5">
+            <div>
               <SingleP user={user} />
             </div>
           </div>

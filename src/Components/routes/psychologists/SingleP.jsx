@@ -1,14 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Psychologists.css";
 
 const SingleP = ({ user }) => {
-  const handleClick = () => {
-    <div>{user}</div>;
-  };
   return (
     <div>
-      <div className="card card-psy card-review raunded">
-        <img src={user.picture.large} className="card-img-top" alt="..." />
+      <div className="card single">
+        <img
+          src={user.picture.large}
+          className="card-img-top rounded-circle shadow-4-strong"
+          alt="..."
+        />
         <div className="card-body">
           <a
             href="/#"
