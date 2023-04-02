@@ -32,7 +32,7 @@ const SingleP = ({ user }) => {
           <p className="card-text mb-4">Akademik Yıl ({user.registered.age})</p>
           <h6 className="fw-bolder">İletişim</h6>
           <i className="fa-sharp fa-solid fa-at"></i>
-          <p className="card-text">{user.email}</p>
+          <p className="card-text email">{user.email}</p> {/*bak*/}
           <i className="fa-solid fa-phone"></i>
           <p className="card-text mb-4">{user.phone}</p>
           <a href="#/" className="btn btn-primary">
