@@ -21,7 +21,7 @@
   border-radius: 30px;
   font-weight: 700;
   border: none;
-  color: #322460;
+  color: #212224;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
@@ -29,7 +29,7 @@
 
 .footer-info-button:hover {
   outline: none;
-  background-color: gray;
+  background-color: #212224;
   color: #fff;
 }
 
