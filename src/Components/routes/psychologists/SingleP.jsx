@@ -29,7 +29,7 @@ const SingleP = ({ user }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consectetur, beatae.
           </p>
-          <p className="card-text mb-4">Akademik Yıl ({user.registered.age})</p>
+          <p className="card-text mb-4">Deneyim: {user.registered.age} yıl</p>
           <h6 className="fw-bolder">İletişim</h6>
           <i className="fa-sharp fa-solid fa-at"></i>
           <p className="card-text email">{user.email}</p> {/*bak*/}
