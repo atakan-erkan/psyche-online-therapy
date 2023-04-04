@@ -51,8 +51,8 @@ function AboutUs() {
             </div>
             <div className="row mt-5">
               <div className="col-md-8">
-                <h3 class="title">Misyonumuz</h3>
-                <p class="description">
+                <h3 className="title">Misyonumuz</h3>
+                <p className="description">
                   Terapiyi herkes için 7/24 ulaşılabilir kılmak, kişinin
                   ihtiyacına uygun terapi hizmeti sunmak, katma değerli sistemle
                   kullanıcı odaklı bir yapı oluşturmak, pozitif psikoloji ve
@@ -65,8 +65,8 @@ function AboutUs() {
             <div className="row mt-5">
               <div className="col-md-4"></div>
               <div className="col-md-8">
-                <h3 class="title">Vizyonumuz</h3>
-                <p class="description">
+                <h3 className="title">Vizyonumuz</h3>
+                <p className="description">
                   Terapiye karşı önyargıları kırıp global ölçekte terapi hizmeti
                   sunmak, yenilikçi bir anlayışla terapiyi teknolojiyle
                   bütünleştirirken geleneksel terapiye ulaşma imkanı olmayanlar
