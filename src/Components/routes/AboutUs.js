@@ -50,16 +50,6 @@ function AboutUs() {
               </i>
             </div>
             <div className="row mt-5">
-<<<<<<< HEAD
-              <div className="col-md-8">
-                <h3 className="title">Misyonumuz</h3>
-                <p className="description">
-                  Terapiyi herkes için 7/24 ulaşılabilir kılmak, kişinin
-                  ihtiyacına uygun terapi hizmeti sunmak, katma değerli sistemle
-                  kullanıcı odaklı bir yapı oluşturmak, pozitif psikoloji ve
-                  mental iyi oluşu sürdürülebilirlik çerçevesinde
-                  yaygınlaştırmak.
-=======
               <div className="col-md-12">
                 <h3 class="title">Biz Kimiz?</h3>
                 <p class="description">
@@ -92,7 +82,6 @@ function AboutUs() {
                   Vizyonumuz, tüm kullanıcılarımızın, sağlıklı bir hayat
                   sürmelerine yardımcı olan psikolojik destek ve kaynaklar
                   sağlamaktır.
->>>>>>> atakan
                 </p>
               </div>
               <div className="col-md-4"></div>
@@ -100,15 +89,6 @@ function AboutUs() {
             <div className="row mt-5">
               <div className="col-md-4"></div>
               <div className="col-md-8">
-<<<<<<< HEAD
-                <h3 className="title">Vizyonumuz</h3>
-                <p className="description">
-                  Terapiye karşı önyargıları kırıp global ölçekte terapi hizmeti
-                  sunmak, yenilikçi bir anlayışla terapiyi teknolojiyle
-                  bütünleştirirken geleneksel terapiye ulaşma imkanı olmayanlar
-                  için güçlü bir alternatif sunmak ve bireysel ruh sağlığına
-                  verilen önemi geliştirmek.
-=======
                 <h3 class="title">Misyonumuz</h3>
                 <p class="description">
                   Misyonumuz, herkesin hayatında zaman zaman karşılaştığı
@@ -116,7 +96,6 @@ function AboutUs() {
                   birçok farklı konuda uzmanlaşmış kayıtlı psikologlarımızın,
                   kullanıcılarımızın sorularına yanıt vermesini sağlayarak,
                   çözümlere ulaşmalarına yardımcı oluyoruz.
->>>>>>> atakan
                 </p>
               </div>
             </div>
