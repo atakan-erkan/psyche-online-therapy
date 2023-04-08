@@ -79,7 +79,7 @@ function FAQ() {
         <div class="container">
           <form
             onSubmit={handleFormSubmit}
-            className="mx-auto col-md-6 text-justify text-left"
+            className="mx-auto col-md-6 text-justify text-right"
           >
             <h2 className="mt-3 mb-3">İletişim</h2>
             <div className="mb-3">
@@ -136,7 +136,7 @@ function FAQ() {
       </div>
       <p class="" id="info">
         Sıkça sorulan sorularda bulamadığınız <br></br>
-        bir soru olursa yandaki iletişim formu <br></br>üzerinden iletişime
+        bir soru olursa üstteki iletişim formu <br></br>üzerinden iletişime
         geçebilirsiniz.
       </p>
     </div>
