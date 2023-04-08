@@ -32,8 +32,8 @@ function AboutUs() {
           <div className="col-md-8">
             <div className="site-name-info mb-5">
               <i>
-                <h3>PSYCHE Nedir?</h3>
-                <p>
+                <h3 className="title">PSYCHE Nedir?</h3>
+                <p className="description">
                   <b>Psyche</b> kelimesi, Yunanca <b>"can"</b> veya <b>"ruh"</b>{" "}
                   anlamına gelir. Psikolojide ise <b>"Psyche"</b> terimi,
                   insanın zihinsel faaliyetleri, duyguları, düşünceleri,
@@ -50,6 +50,7 @@ function AboutUs() {
               </i>
             </div>
             <div className="row mt-5">
+<<<<<<< HEAD
               <div className="col-md-8">
                 <h3 className="title">Misyonumuz</h3>
                 <p className="description">
@@ -58,6 +59,40 @@ function AboutUs() {
                   kullanıcı odaklı bir yapı oluşturmak, pozitif psikoloji ve
                   mental iyi oluşu sürdürülebilirlik çerçevesinde
                   yaygınlaştırmak.
+=======
+              <div className="col-md-12">
+                <h3 class="title">Biz Kimiz?</h3>
+                <p class="description">
+                  Psikolojik Destek, zorlu zamanlarda insanlara destek sağlamak
+                  için bir araç olarak tasarlanmıştır. Burada, kullanıcılarımız
+                  kayıt olarak, yaşadıkları sorunları paylaşabilir ve sadece
+                  kayıtlı psikologlar tarafından görülebilir. Bu sayede,
+                  gizlilik konusunda tam bir güvence sağlanmış olur.
+                  <br />
+                  <br />
+                  Amacımız, herkesin hayatında zaman zaman zorluklarla
+                  karşılaşabileceğini ve bu zorlukların çözümü için doğru
+                  desteğin ne kadar önemli olduğunu anlatmaktır. Bu nedenle, web
+                  sitemizde, yaşadığınız zorlukları tanımlamanıza,
+                  düşüncelerinizi ve hislerinizi açıklamanıza yardımcı olmak
+                  için bir sorun paylaşım aracı sunuyoruz.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col-md-8">
+            <div className="row mt-3">
+              <div className="col-md-8">
+                <h3 class="title">Vizyonumuz</h3>
+                <p class="description">
+                  Psikolojik Destek, insanların güçlü ve sağlıklı bir zihin ve
+                  ruh haliyle yaşamasına yardımcı olmak için tasarlanmıştır.
+                  Vizyonumuz, tüm kullanıcılarımızın, sağlıklı bir hayat
+                  sürmelerine yardımcı olan psikolojik destek ve kaynaklar
+                  sağlamaktır.
+>>>>>>> atakan
                 </p>
               </div>
               <div className="col-md-4"></div>
@@ -65,6 +100,7 @@ function AboutUs() {
             <div className="row mt-5">
               <div className="col-md-4"></div>
               <div className="col-md-8">
+<<<<<<< HEAD
                 <h3 className="title">Vizyonumuz</h3>
                 <p className="description">
                   Terapiye karşı önyargıları kırıp global ölçekte terapi hizmeti
@@ -72,9 +108,66 @@ function AboutUs() {
                   bütünleştirirken geleneksel terapiye ulaşma imkanı olmayanlar
                   için güçlü bir alternatif sunmak ve bireysel ruh sağlığına
                   verilen önemi geliştirmek.
+=======
+                <h3 class="title">Misyonumuz</h3>
+                <p class="description">
+                  Misyonumuz, herkesin hayatında zaman zaman karşılaştığı
+                  zorluklara yardımcı olmaktır. Bu nedenle, web sitemizde,
+                  birçok farklı konuda uzmanlaşmış kayıtlı psikologlarımızın,
+                  kullanıcılarımızın sorularına yanıt vermesini sağlayarak,
+                  çözümlere ulaşmalarına yardımcı oluyoruz.
+>>>>>>> atakan
                 </p>
               </div>
             </div>
+            <div className="row mt-5">
+              <div className="col-md-12">
+                <h3 className="title">Sizler İçin Ne Sağlıyoruz?</h3>
+                <ul>
+                  <li className="description mt-3">
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
+                    Kullanıcıların kayıt olup, zorluklarını paylaşabilecekleri
+                    bir platform sunuyoruz.
+                  </li>
+                  <li className="description mt-3">
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
+                    Bu platformda, sadece kayıtlı psikologlar tarafından
+                    görülebilen bir sorun paylaşım aracı sağlıyoruz.
+                  </li>
+                  <li className="description mt-3">
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
+                    Kullanıcılarımıza, farklı konularda uzmanlaşmış
+                    psikologlarımız tarafından yanıtlanan sorular bölümü
+                    sunuyoruz.
+                  </li>
+                  <li className="description mt-3">
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
+                    Web sitemizde, psikolojik sağlık ve refah hakkında çeşitli
+                    kaynaklar ve makaleler sunuyoruz.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mit">
+            <img src="img/psyche-mit2.jpg" className="rounded-3" alt="" />
+            <p>
+              <i>
+                *Mitolojide <b>"Psyche"</b> Tasviri
+              </i>
+            </p>
           </div>
         </div>
       </div>
