@@ -6,7 +6,9 @@ const PList = () => {
   const [users, setUsers] = useState([]);
 
   const fetchUsers = async () => {
-    const response = await axios.get("https://randomuser.me/api/?results=120");
+    const response = await axios.get(
+      "https://randomuser.me/api/?results=120&nat=tr" //turkish users &nat=tr
+    );
     setUsers(response.data.results);
   };
   useEffect(() => {
