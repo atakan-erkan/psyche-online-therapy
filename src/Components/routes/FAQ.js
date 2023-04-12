@@ -22,7 +22,7 @@ function FAQ() {
   };
 
   return (
-    <div className="faq-wrapper" class="mt-4 pt-4">
+    <div className="faq-wrapper mt-4 pt-4">
       <h1 className="text-center mt-4 pt-4" id="#title">
         {" "}
         Psikoloji İle İlgili Sıkça Sorulan Sorular{" "}
