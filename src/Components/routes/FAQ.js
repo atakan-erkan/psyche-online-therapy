@@ -23,7 +23,7 @@ function FAQ() {
 
   return (
     <div className="faq-wrapper" class="mt-4 pt-4">
-      <h1 class="text-center mt-4 pt-4" id="#title">
+      <h1 className="text-center mt-4 pt-4" id="#title">
         {" "}
         Psikoloji İle İlgili Sıkça Sorulan Sorular{" "}
       </h1>{" "}
@@ -76,7 +76,7 @@ function FAQ() {
         </button>{" "}
       </div>
       <div className="d-flex mr-5">
-        <div class="container">
+        <div className="container">
           <form
             onSubmit={handleFormSubmit}
             className="mx-auto col-md-6 text-justify text-right"
@@ -131,10 +131,10 @@ function FAQ() {
           </form>
         </div>
         <div>
-          <img src="/img/sss.png" class=" mt-4" id="img" alt="resim" />
+          <img src="/img/sss.png" className=" mt-4" id="img" alt="resim" />
         </div>
       </div>
-      <p class="" id="info">
+      <p className="" id="info">
         Sıkça sorulan sorularda bulamadığınız <br></br>
         bir soru olursa üstteki iletişim formu <br></br>üzerinden iletişime
         geçebilirsiniz.
