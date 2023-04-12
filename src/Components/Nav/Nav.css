@@ -5,12 +5,17 @@
   top: 0;
   left: 0;
   z-index: 1;
-  transition: 0.3s ease-in;
-  overflow: hidden;
+  transition: 0.4s ease-in;
 }
 
 .header-bg {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  margin: 10px;
+  border-radius: 50px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px;
+  transition: 0.4s;
+  width: 98.9%;
 }
 .header .nav-navbar {
   display: flex;
@@ -21,11 +26,12 @@
 }
 
 .header .nav-menu a {
-  color: #135187;
+  color: #175c4c;
+  font-size: 1.2rem;
 }
 
 .header .nav-navbar img {
-  width: 230px;
+  width: 300px;
   height: auto;
 }
 
@@ -41,15 +47,15 @@
 .nav-button {
   background-color: transparent;
   border-radius: 25px;
-  border: 1px solid #322460;
-  color: #322460;
+  border: 1px solid #175c4c;
+  color: #175c4c;
   font-size: 16px !important;
   font-weight: bold !important;
   padding: 10px 30px;
   transition: 0.3s !important;
 }
 .nav-button:hover {
-  background-color: #322460;
+  background-color: #175c4c;
   color: white;
 }
 
@@ -66,9 +72,16 @@
 @media screen and (max-width: 940px) {
   .header {
     max-width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 1);
   }
+  .header-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
 
+    border-radius: 0px;
+    margin: 0px;
+  }
   .header .nav-navbar {
     max-width: 100%;
   }
@@ -83,10 +96,11 @@
     left: -100%;
     top: 90px;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     width: 100%;
     height: 90vh;
-    z-index: 999;
+    z-index: 1000;
     text-align: center;
     transition: 0.3s;
   }
@@ -94,6 +108,8 @@
   .nav-menu.active {
     left: 0;
     display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
   }
 
   .nav-navbar-item {
@@ -101,7 +117,8 @@
   }
 
   .header .nav-navbar img {
-    width: 150px;
+    width: 300px;
+    padding-right: 10px;
   }
   .entry {
     display: none;

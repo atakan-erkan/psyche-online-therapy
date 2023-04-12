@@ -2,12 +2,12 @@ import "./App.css";
 import Nav from "./Components/Nav/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutUs from "./Components/routes/AboutUs";
-import Psychologists from "./Components/routes/Psychologists";
+import Psychologists from "./Components/routes/psychologists/Psychologists";
 import Tests from "./Components/routes/Tests";
 import FAQ from "./Components/routes/FAQ";
 import LogIn from "./Components/routes/LogIn";
 import SignIn from "./Components/routes/SignIn";
-import Home from "./Components/routes/Home";
+import Home from "./Components/routes/home/Home";
 import Footer from "./Components/Footer/Footer";
 import FooterInfo from "./Components/Footer/FooterInfo";
 

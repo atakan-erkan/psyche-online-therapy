@@ -25,7 +25,7 @@ const Home = () => {
                 </a>
               </div>
               <div className="col-lg-6">
-                <img src="img/PSYCHE-2.png" className="w-100" alt="logo" />
+                <img src="img/psyche.png" className="w-100" alt="PSYCHE LOGO" />
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Home = () => {
       <section id="why-us" className="my-3">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6 mt-4">
+            <div className="col-12 col-md-6 mt-5">
               <h2 className="fw-bold fs-2 mb-4">
                 Neden Psyche Tercih Etmelisiniz?
               </h2>
@@ -80,7 +80,7 @@ const Home = () => {
               </h3>
             </div>
             <div className="col-12 col-md-5 offset-md-1">
-              <img src="img/why-us.jpg" className="w-100" alt="" />
+              <img src="img/about-us.svg" className="w-100" alt="" />
             </div>
           </div>
         </div>

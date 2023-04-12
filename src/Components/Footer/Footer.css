@@ -21,7 +21,7 @@
   border-radius: 30px;
   font-weight: 700;
   border: none;
-  color: #322460;
+  color: #212224;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
@@ -29,7 +29,7 @@
 
 .footer-info-button:hover {
   outline: none;
-  background-color: #322460;
+  background-color: #212224;
   color: #fff;
 }
 
@@ -142,7 +142,21 @@
   font-size: 0.875rem;
 }
 
-.footer-col-hiwell {
+.footer-col-psyche {
   display: flex;
   flex-direction: column;
+}
+.help-list {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.help-list > li {
+  padding: 10px 0;
+}
+
+.help-list li a {
+  margin-top: 20px;
+  color: #000;
 }

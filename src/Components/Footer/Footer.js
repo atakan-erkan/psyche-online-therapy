@@ -13,41 +13,49 @@ function Footer() {
                   width="150"
                   height="150"
                   loading="lazy"
-                  src="img/PSYCHE-2.png"
-                  alt="hiwell logo"
+                  src="img/psyche.png"
+                  alt="Psyche Logo"
                 />
               </a>
             </div>
             <div className="footer-company-description mt-4">
-              500'den fazla uzman psikolog kadromuzla ihtiyacınız olan her
+              100'den fazla uzman psikolog kadromuzla ihtiyacınız olan her
               konuda anında online terapi ve psikolojik danışmanlık!
             </div>
           </div>
 
-          <div className="col-md-2 mb-4 mb-md-0 align-items-md-center footer-col-hiwell">
+          <div className="col-md-2 mb-4 mb-md-0 align-items-md-center footer-col-psyche">
             <div>
               <div className="footer-nav-title">Psyche</div>
               <ul className="nav flex-column">
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <a className="nav-link" href="/#nasil-calisir">
+                    Nasıl Çalışır?
+                  </a>
+                </li>
+
+                <li className="nav-item">
+                  <a className="nav-link" href="/psychologists">
                     Psikologlar
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#nasil-calisir">
-                    Nasıl Çalışır
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/">
-                    S.S.S.
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <a className="nav-link" href="/aboutus">
                     Hakkımızda
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/tests">
+                    Testler
+                  </a>
+                </li>
+
+                <li className="nav-item">
+                  <a className="nav-link" href="/faq">
+                    S.S.S.
+                  </a>
+                </li>
+
                 <li className="nav-item">
                   <a className="nav-link" href="/">
                     Bize Ulaşın
@@ -61,38 +69,35 @@ function Footer() {
             <div className="footer-nav-title">Psikolojik Testler</div>
             <ul className="nav flex-column">
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Depresyon Testi
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/tests">
                   Anksiyete (Kaygı) Testi
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/tests">
+                  Depresyon Testi
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/tests">
+                  Öfke Testi
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="/tests">
                   Stres Testi
                 </a>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Travmatik Yas Testi
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/tests">
                   Travma Sonrası Stres Bozukluğu Testi
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/tests">
                   Alkol Bağımlılığı Testi
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Sosyal Kaygı Testi
                 </a>
               </li>
             </ul>
@@ -118,7 +123,7 @@ function Footer() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="h">
+                <a className="nav-link" href="/">
                   Aydınlatma Metni
                 </a>
               </li>
@@ -129,7 +134,7 @@ function Footer() {
                 src="img/qrcode_www.psychetherapy.online.png"
                 width="70"
                 height="81"
-                alt="Etbis QR"
+                alt="PSYCHE QR"
                 className="img-fluid"
               />
             </div>
