@@ -21,6 +21,7 @@ import {
   Menu,
   Close,
 } from "@mui/icons-material";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "state";
 import { useNavigate } from "react-router-dom";
@@ -45,6 +46,7 @@ const Navbar = ({ userId }) => {
 
   //change nav soften when scrolling
   const [soften, setSoften] = useState(false);
+  const [click, setClick] = useState(false);
   const changeSoften = () => {
     if (window.scrollY >= 90) {
       setSoften(true);
@@ -52,6 +54,7 @@ const Navbar = ({ userId }) => {
       setSoften(false);
     }
   };
+  const handleClick = () => setClick(!click);
   window.addEventListener("scroll", changeSoften);
   const [mobile, setMobile] = useState(false);
   const changeMobile = () => {
@@ -80,7 +83,7 @@ const Navbar = ({ userId }) => {
           {mobile ? (
             <img src="img/psychelogo.png" alt="" width={300} />
           ) : (
-            <img src="img/psychelogo.png" alt="" width={250} />
+            <img src="img/psychelogo.png" alt="" width={235} />
           )}
         </Typography>
         <Typography fontWeight="bold" fontSize="clamp(1rem, 2rem, 2.25rem)">
@@ -151,7 +154,7 @@ const Navbar = ({ userId }) => {
         <IconButton
           onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
         >
-          <Menu />
+          <FaBars size={30} style={{ color: "#175c4c" }} />
         </IconButton>
       )}
 
@@ -168,11 +171,11 @@ const Navbar = ({ userId }) => {
           backgroundColor={background}
         >
           {/* CLOSE ICON */}
-          <Box display="flex" justifyContent="flex-end" p="1rem">
+          <Box display="flex" justifyContent="flex-end" p="1.5rem">
             <IconButton
               onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
             >
-              <Close />
+              <FaTimes size={30} style={{ color: "#175c4c" }} />
             </IconButton>
           </Box>
 
@@ -194,27 +197,26 @@ const Navbar = ({ userId }) => {
                 <LightMode sx={{ color: dark, fontSize: "25px" }} />
               )}
             </IconButton>
-            <div className="">
-              <ul className="">
-                <li className=" ">
-                  <a href="/#nasil-calisir">Nasıl Çalışır?</a>
-                </li>
-                <li className=" ">
-                  <a href="/aboutus">Hakkımızda</a>
-                </li>
-                <li className=" ">
-                  <a href="/psychologists">Psikologlarımız</a>
-                </li>
-                <li className=" ">
-                  <a href="/tests">Testler</a>
-                </li>
-                <li className=" ">
-                  <a href="/faq">S.S.S</a>
-                </li>
-                <li className="">
-                  <a href="/login">Giriş Yapın</a>
-                </li>
-              </ul>
+            <div className="container header-bg2">
+              <div className="nav-navbar2">
+                <ul className="row nav-menu2">
+                  <li className="col-12 col-md-12 nav-navbar-item2">
+                    <a href="/#nasil-calisir">Nasıl Çalışır?</a>
+                  </li>
+                  <li className="col-12 col-md-12 nav-navbar-item2">
+                    <a href="/aboutus">Hakkımızda</a>
+                  </li>
+                  <li className="col-12 col-md-12 nav-navbar-item2">
+                    <a href="/psychologists">Psikologlarımız</a>
+                  </li>
+                  <li className="col-12 col-md-12 nav-navbar-item2">
+                    <a href="/tests">Testler</a>
+                  </li>
+                  <li className="col-12 col-md-12 nav-navbar-item2">
+                    <a href="/faq">S.S.S</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <FormControl variant="standard" value={fullName}>
               <Select

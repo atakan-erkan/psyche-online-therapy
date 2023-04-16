@@ -4,11 +4,16 @@ import Form from "./Form";
 const LoginPage = () => {
   const theme = useTheme();
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
+  const isNonMobileScreen = useMediaQuery("(min-width: 600px)");
   return (
     <Box>
       <Box width="100%" p="1rem 6%" textAlign="center" marginTop={10}>
         <a href="/">
-          <img src="img/psychelogo.png" width={500} alt="PSYCHE" />
+          <img
+            src="img/psychelogo.png"
+            width={isNonMobileScreen ? 500 : 300}
+            alt="PSYCHE"
+          />
         </a>
       </Box>
 

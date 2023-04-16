@@ -126,5 +126,29 @@
   .entry2 {
     display: block;
   }
+  .header-bg2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    border-radius: 0px;
+    margin: 0px;
+  }
+
+  .nav-menu2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-navbar-item2 {
+    margin: 1.5rem 0;
+    color: #175c4c;
+    font-size: 20px;
+  }
+  .nav-navbar-item2 a {
+    color: #175c4c;
+    font-size: 1.2rem;
+  }
 }
 /**/
