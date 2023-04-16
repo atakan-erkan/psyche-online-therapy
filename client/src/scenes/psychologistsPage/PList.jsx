@@ -15,17 +15,37 @@ const PList = () => {
     fetchUsers();
   }, []);
   return (
-    <div className="container psikolog">
-      <div className="row justify-content-center">
-        {users.map((user, i) => (
-          <div key={i} className="col-lg-3 col-md-4 mt-5">
-            <div>
-              <SingleP user={user} />
+    <main id="psikolog">
+      <section className="my-3 my-lg-4 mx-2">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-12 mt-5 text-center">
+              <div>
+                <h1 className="fs-2 fw-bold">Psikologlarımız</h1>
+                <p className="fw-light opacity-75">
+                  Sizleri anlayan, dinleyen ve çözüm üreten 100'den fazla uzman
+                  psikoloğumuz, psikolojik sağlığınıza destek olmak için
+                  Psyche’de.
+                </p>
+              </div>
             </div>
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      </section>
+      <section className="my-5 mx-2">
+        <div className="container">
+          <div className="row justify-content-center">
+            {users.map((user, i) => (
+              <div key={i} className="col-lg-3 col-md-4 mt-5">
+                <div>
+                  <SingleP user={user} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 
