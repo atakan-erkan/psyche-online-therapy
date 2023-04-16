@@ -29,3 +29,7 @@
 .slick-active {
   width: 440px;
 }
+#why-us {
+  font-weight: 700;
+  list-style: none;
+}

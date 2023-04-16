@@ -44,43 +44,87 @@ const MainPage = () => {
                   Neden Psyche Tercih Etmelisiniz?
                 </h2>
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light mt-5">
-                  <li>Tüm terapistlerimizin yetkinliğini garanti ediyoruz.</li>
+                  <li>
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>{" "}
+                    Tüm terapistlerimizin yetkinliğini garanti ediyoruz.
+                  </li>
                 </h3>
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
                     Danışanlarımızın terapi yolculuklarını teknoloji ile
                     kişiselleştiriyoruz.
                   </li>
                 </h3>
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
                     Terapiyi herkes için her yerden ve her an erişilebilir hale
                     getiriyoruz.
                   </li>
                 </h3>
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
                     Danışanlarımızın mahremiyetini %100 güvence altına alıyoruz.
                   </li>
                 </h3>
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
-                  <li>Tüm terapistlerimizin yetkinliğini garanti ediyoruz.</li>
-                </h3>
-                <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
-                    Danışanlarımızın terapi yolculuklarını teknoloji ile
-                    kişiselleştiriyoruz.
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
+                    Psyche sayesinde, konforlu ev ortamınızda, istediğiniz zaman
+                    kullanabileceğiniz bir kaynak sunar. Böylece, randevu almak
+                    için vakit ayırmak veya seyahat etmek zorunda kalmazsınız.
                   </li>
                 </h3>
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
-                    Terapiyi herkes için her yerden ve her an erişilebilir hale
-                    getiriyoruz.
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
+                    Sitemizde kayıtlı olan psikologlar, alanlarında deneyimli ve
+                    yetkin kişilerdir. Bu nedenle, size en iyi kalitede
+                    psikolojik destek hizmeti sunabilirler.
                   </li>
                 </h3>
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
-                    Danışanlarımızın mahremiyetini %100 güvence altına alıyoruz.
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
+                    Sitemize kayıt olan diğer kullanıcılarla etkileşim kurarak,
+                    desteğe ihtiyaç duyduğunuzda destekleyici bir topluluk
+                    bulabilirsiniz. Bu sayede, yalnız olmadığınızı ve herkesin
+                    karşılaştığı sorunlar olduğunu anlayabilirsiniz.
+                  </li>
+                </h3>
+                <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
+                  <li>
+                    <i
+                      class="fa-solid fa-check fa-lg me-2"
+                      style={{ color: "#175c4c" }}
+                    ></i>
+                    Sitemizde, psikolojik sağlık ve refah hakkında çeşitli
+                    kaynaklar ve makaleler de bulunur. Bu kaynaklar, size farklı
+                    konularda bilgi edinmenize yardımcı olabilir ve sağlıklı bir
+                    hayat sürmenize katkıda bulunabilir.
                   </li>
                 </h3>
               </div>
