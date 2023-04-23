@@ -8,7 +8,7 @@
 .test-list-box {
   padding: 24px !important;
   border: 1px solid #efefef !important;
-  background-color: #fff;
+
   border-radius: 16px !important;
   height: 100%;
   flex-direction: column !important;
@@ -65,7 +65,6 @@
 .test-question-box {
   padding: 24px !important;
   border: 1px solid #efefef !important;
-  background-color: #fff;
   border-radius: 16px !important;
   height: 100%;
   flex-direction: column !important;
