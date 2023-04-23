@@ -1,12 +1,14 @@
 import React from "react";
 import "./Psychologists.css";
+import { useSelector } from "react-redux";
 
 const SingleP = ({ user }) => {
+  const mode = useSelector((state) => state.mode);
   return (
     <div>
-      <div className="card single">
+      <div className={`card single ${mode === "dark" && "bg-transparent"}`}>
         <img
-          src={user.picture.large}
+          src={`http://localhost:3001/assets/${user.picturePath}`}
           className="card-img-top rounded-circle shadow-4-strong"
           alt="..."
         />
@@ -14,28 +16,24 @@ const SingleP = ({ user }) => {
           <a
             href="/#"
             className=""
-            style={{ textDecoration: "none", color: "black" }}
+            style={{ textDecoration: "none", color: "inherit" }}
           >
             <h5 className="card-title fw-bolder">
-              {user.name.first} {user.name.last}
+              {user.firstName} {user.lastName}
             </h5>
           </a>
-          <p className="text-primary">Uzman Klinik Psikolog</p>
+          <p className="text-primary">{user.occupationOption}</p>
           <h6 className="card-text">
-            {user.location.city} | {user.location.country}
+            {user.location} | {user.country}
           </h6>
           <h6 className="fw-bolder">Hakkında</h6>
-          <p className="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur, beatae.
-          </p>
-          <p className="card-text mb-4">Deneyim: {user.registered.age} yıl</p>
+          <p className="card-text">{user.about}</p>
+          {/* <p className="card-text mb-4">Deneyim: {user.registered.age} yıl</p>
           <h6 className="fw-bolder">İletişim</h6>
           <i className="fa-sharp fa-solid fa-at"></i>
-          <p className="card-text email">{user.email}</p> {/*bak*/}
-          <i className="fa-solid fa-phone"></i>
-          <p className="card-text mb-4">{user.phone}</p>
-          <a href="#/" className="btn btn-primary">
+          <p className="card-text email">{user.email}</p>
+          <p className="card-text mb-4">{user.phone}</p> */}
+          <a href="/psychologists" className="btn btn-primary">
             DAHA FAZLA
           </a>
         </div>

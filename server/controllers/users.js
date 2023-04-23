@@ -28,6 +28,8 @@ export const getUserFriends = async (req, res) => {
         location,
         picturePath,
         country,
+        occupationOption,
+        about,
       }) => {
         return {
           _id,
@@ -37,6 +39,8 @@ export const getUserFriends = async (req, res) => {
           location,
           picturePath,
           country,
+          occupationOption,
+          about,
         };
       }
     );

@@ -1,19 +1,23 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
+// import axios from "axios";
 import SingleP from "./SingleP";
+import { useSelector } from "react-redux";
 import "./Psychologists.css";
-const PList = () => {
-  const [users, setUsers] = useState([]);
 
-  const fetchUsers = async () => {
-    const response = await axios.get(
-      "https://randomuser.me/api/?results=100&nat=tr" //turkish users &nat=tr
-    );
-    setUsers(response.data.results);
-  };
-  useEffect(() => {
-    fetchUsers();
-  }, []);
+const PList = () => {
+  const users = useSelector((state) => state.users);
+  // const [users, setUsers] = useState([]);
+
+  // const fetchUsers = async () => {
+  //   const response = await axios.get(
+  //     "https://randomuser.me/api/?results=100&nat=tr" //turkish users &nat=tr
+  //   );
+  //   setUsers(response.data.results);
+  // };
+  // useEffect(() => {
+  //   fetchUsers();
+  // }, []);
+
   return (
     <main id="psikolog">
       <section className="my-3 my-lg-4 mx-2">
@@ -32,16 +36,18 @@ const PList = () => {
           </div>
         </div>
       </section>
-      <section className="my-5 mx-2">
+      <section>
         <div className="container">
           <div className="row justify-content-center">
-            {users.map((user, i) => (
-              <div key={i} className="col-lg-3 col-md-4 mt-5">
-                <div>
-                  <SingleP user={user} />
+            {users.map((user, i) =>
+              user.occupationOption === "Psikolog" ? (
+                <div key={i} className="col-lg-3 col-md-4 mt-5">
+                  <div>
+                    <SingleP user={user} />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ) : null
+            )}
           </div>
         </div>
       </section>

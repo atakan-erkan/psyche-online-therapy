@@ -33,11 +33,16 @@ const UserSchema = new mongoose.Schema(
       type: Array,
       default: [],
     },
+    occupationOption: {
+      type: String,
+      possibleValues: ["Psikolog", "Kullanıcı"],
+    },
     location: String,
     country: String,
     occupation: String,
     viewedProfile: Number,
     impressions: Number,
+    about: String,
   },
   { timestamps: true }
 );
