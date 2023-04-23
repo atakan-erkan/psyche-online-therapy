@@ -112,12 +112,12 @@ const Navbar = ({ userId }) => {
         <FlexBetween gap="2rem">
           <IconButton onClick={() => dispatch(setMode())}>
             {theme.palette.mode === "dark" ? (
-              <DarkMode sx={{ fontSize: "25px" }} />
+              <DarkMode sx={{ fontSize: "30px" }} />
             ) : (
-              <LightMode sx={{ color: dark, fontSize: "25px" }} />
+              <LightMode sx={{ color: dark, fontSize: "30px" }} />
             )}
           </IconButton>
-          <UserImage image={picturePath} size="40px" />
+          <UserImage image={picturePath} size="60px" />
           <FormControl variant="standard" value={fullName}>
             <Select
               value={fullName}
@@ -235,7 +235,9 @@ const Navbar = ({ userId }) => {
                 input={<InputBase />}
               >
                 <MenuItem value={fullName}>
-                  <Typography>{fullName}</Typography>
+                  <Typography onClick={() => navigate(`/profile/${userId}`)}>
+                    {fullName}
+                  </Typography>
                 </MenuItem>
                 <MenuItem onClick={() => dispatch(setLogout())}>
                   Çıkış Yap
