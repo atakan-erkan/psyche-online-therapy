@@ -12,7 +12,7 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { setLogin } from "state";
+import { setLogin, setUsers } from "state";
 import Dropzone from "react-dropzone";
 import FlexBetween from "components/FlexBetween";
 
@@ -51,14 +51,6 @@ const registerSchema = yup.object().shape({
       ></i>
     ),
   location: yup
-    .string()
-    .required(
-      <i
-        className="fa-sharp fa-solid fa-circle-exclamation"
-        style={{ color: "#b94a48" }}
-      ></i>
-    ),
-  occupation: yup
     .string()
     .required(
       <i
@@ -150,12 +142,18 @@ const Form = () => {
       body: JSON.stringify(values),
     });
     const loggedIn = await loggedInResponse.json();
+    // console.log(loggedIn.users);
     onSubmitProps.resetForm();
     if (loggedIn) {
       dispatch(
         setLogin({
           user: loggedIn.user,
           token: loggedIn.token,
+        })
+      );
+      dispatch(
+        setUsers({
+          users: loggedIn.users,
         })
       );
       navigate("/home");
@@ -194,6 +192,53 @@ const Form = () => {
           >
             {isRegister && (
               <>
+                <Box sx={{ gridColumn: "span 2" }}>
+                  <input
+                    id="kullanıcı"
+                    type="radio"
+                    className="btn-check"
+                    name="occupationOption"
+                    label="Kullanıcı"
+                    checked={values.occupationOption === "Kullanıcı"}
+                    onChange={handleChange}
+                    value="Kullanıcı"
+                  />
+                  <label
+                    for="kullanıcı"
+                    className="btn col-md-12 fw-bold"
+                    style={{ backgroundColor: "#175c4c", color: "#fff" }}
+                  >
+                    ÜYE KAYDI
+                  </label>
+                </Box>
+                <Box sx={{ gridColumn: "span 2" }}>
+                  <input
+                    id="psikolog"
+                    type="radio"
+                    className="btn-check"
+                    name="occupationOption"
+                    label="Psikolog"
+                    checked={values.occupationOption === "Psikolog"}
+                    onChange={handleChange}
+                    value="Psikolog"
+                  />
+                  <label
+                    for="psikolog"
+                    className="btn col-md-12 fw-bold"
+                    style={{ backgroundColor: "#175c4c", color: "#fff" }}
+                  >
+                    PSİKOLOG KAYDI
+                  </label>
+                </Box>
+                {values.occupationOption === "Psikolog" ? (
+                  <Box sx={{ gridColumn: "span 4" }} textAlign={"center"}>
+                    <h3>Yeni Psikolog Kaydı</h3>
+                  </Box>
+                ) : (
+                  <Box sx={{ gridColumn: "span 4" }} textAlign={"center"}>
+                    <h3>Danışan Üye Kaydı</h3>
+                  </Box>
+                )}
                 <TextField
                   label="Adınız"
                   onBlur={handleBlur}
@@ -236,18 +281,47 @@ const Form = () => {
                   helperText={touched.country && errors.country}
                   sx={{ gridColumn: "span 2" }}
                 />
-                <TextField
-                  label="Meslek"
-                  onBlur={handleBlur}
+
+                {/* <Radio
+                  label="Psikolog"
+                  checked={values.occupationOption === "Psikolog"}
                   onChange={handleChange}
-                  value={values.occupation}
-                  name="occupation"
-                  error={
-                    Boolean(touched.occupation) && Boolean(errors.occupation)
-                  }
-                  helperText={touched.occupation && errors.occupation}
-                  sx={{ gridColumn: "span 4" }}
+                  value="Psikolog"
+                  name="occupationOption"
                 />
+                <Radio
+                  label="Kullanıcı"
+                  checked={values.occupationOption === "Kullanıcı"}
+                  onChange={handleChange}
+                  value="Kullanıcı"
+                  name="occupationOption"
+                /> */}
+                {values.occupationOption === "Psikolog" ? null : (
+                  <TextField
+                    label="Meslek"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    value={values.occupation}
+                    name="occupation"
+                    error={
+                      Boolean(touched.occupation) && Boolean(errors.occupation)
+                    }
+                    helperText={touched.occupation && errors.occupation}
+                    sx={{ gridColumn: "span 4" }}
+                  />
+                )}
+                {values.occupationOption === "Psikolog" ? (
+                  <TextField
+                    label="Hakkında"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    value={values.about}
+                    name="about"
+                    error={Boolean(touched.about) && Boolean(errors.about)}
+                    helperText={touched.about && errors.about}
+                    sx={{ gridColumn: "span 4" }}
+                  />
+                ) : null}
                 <Box
                   gridColumn="span 4"
                   border={`1px solid ${palette.neutral.medium}`}
@@ -317,6 +391,8 @@ const Form = () => {
                 p: "1rem",
                 backgroundColor: { background: "#175c4c" },
                 color: { color: "#fff" },
+
+                fontWeight: { fontWeight: "600" },
                 "&:hover": { background: "#175c4c", color: "#fff" },
               }}
             >
@@ -329,7 +405,7 @@ const Form = () => {
               }}
               sx={{
                 textDecoration: "underline",
-                color: { color: "black" },
+                color: { color: "inherit" },
                 "&:hover": {
                   cursor: "pointer",
                   color: { color: "#175c4c" },

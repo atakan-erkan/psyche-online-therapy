@@ -41,7 +41,6 @@ const Navbar = ({ userId }) => {
   const dark = theme.palette.neutral.dark;
   const background = theme.palette.background.default;
   const primaryLight = theme.palette.primary.light;
-  const alt = theme.palette.background.alt;
   const fullName = `${user.firstName} ${user.lastName}`;
 
   //change nav soften when scrolling
@@ -67,8 +66,7 @@ const Navbar = ({ userId }) => {
   window.addEventListener("resize", changeMobile);
   return (
     <FlexBetween
-      padding="1rem 6%"
-      backgroundColor={alt}
+      padding="1rem 1rem"
       className={soften ? "header header-bg" : "header"}
     >
       <FlexBetween gap="1.75rem">
@@ -80,7 +78,7 @@ const Navbar = ({ userId }) => {
             },
           }}
         >
-          {mobile ? (
+          {isNonMobileScreens ? (
             <img src="img/psychelogo.png" alt="" width={300} />
           ) : (
             <img src="img/psychelogo.png" alt="" width={235} />

@@ -14,11 +14,13 @@ import { themeSettings } from "thema";
 import Navbar from "scenes/navbar";
 import Footer from "scenes/footer";
 import FooterInfo from "scenes/footer/FooterInfo";
-import MainPage from "scenes/mainPage";
+// import MainPage from "scenes/mainPage";
 import Nav from "scenes/navbar/Nav";
+import MainPage from "scenes/mainPage";
 
 function App() {
   const mode = useSelector((state) => state.mode);
+  const isDoctor = useSelector((state) => state.user?.occupationOption);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   const isAuth = Boolean(useSelector((state) => state.token));
 
@@ -29,7 +31,7 @@ function App() {
           <CssBaseline />
           {isAuth ? <Navbar /> : <Nav />}
           <Routes>
-            <Route path="/" element={<MainPage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route
               path="/home"
@@ -53,6 +55,16 @@ function App() {
             <Route
               path="/profile/:userId"
               element={isAuth ? <ProfilePage /> : <Navigate to="/login" />}
+            />
+            <Route
+              path="/main"
+              element={
+                isAuth && isDoctor === "Psikolog" ? (
+                  <MainPage />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
             />
           </Routes>
           <Footer />

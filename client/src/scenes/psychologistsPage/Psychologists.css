@@ -8,12 +8,14 @@
   margin-top: 70px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(23, 92, 76, 0.5);
-  height: 550px;
+  height: 500px;
 }
 .single img {
   position: absolute;
   width: 150px;
   height: 150px;
+  object-fit: cover;
+  object-position: center;
   left: 50%;
   margin-left: -70px;
   top: -80px;

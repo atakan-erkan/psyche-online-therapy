@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   mode: "light",
   user: null,
+  users: null,
   token: null,
   posts: [],
 };
@@ -31,9 +32,9 @@ export const authSlice = createSlice({
     },
     setUsers: (state, action) => {
       if (state.user) {
-        state.user = action.payload.token;
+        state.users = action.payload.users;
       } else {
-        console.error("user non-existent :(");
+        console.error("users non-existent :(");
       }
     },
     setPosts: (state, action) => {

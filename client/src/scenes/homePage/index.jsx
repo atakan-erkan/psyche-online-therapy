@@ -1,7 +1,9 @@
 import { Box } from "@mui/material";
 import "./Home.css";
+import { useSelector } from "react-redux";
 
 const HomePage = () => {
+  const mode = useSelector((state) => state.mode);
   return (
     <Box>
       <main id="page-wrapper">
@@ -146,7 +148,11 @@ const HomePage = () => {
             </div>
             <div className="row mt-5">
               <div className="col-md-4">
-                <div className="card border-0">
+                <div
+                  className={`card border-0 ${
+                    mode === "dark" && "bg-transparent"
+                  }`}
+                >
                   <img
                     src="https://picsum.photos/id/1/1200/550"
                     className="card-img-top rounded-3"
@@ -161,7 +167,11 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card border-0">
+                <div
+                  className={`card border-0 ${
+                    mode === "dark" && "bg-transparent"
+                  }`}
+                >
                   <img
                     src="https://picsum.photos/id/996/1200/550"
                     className="card-img-top rounded-3"
@@ -179,7 +189,11 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card border-0">
+                <div
+                  className={`card border-0 ${
+                    mode === "dark" && "bg-transparent"
+                  }`}
+                >
                   <img
                     src="https://picsum.photos/id/660/1200/550"
                     className="card-img-top rounded-3"

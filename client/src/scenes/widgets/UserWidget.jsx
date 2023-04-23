@@ -42,7 +42,10 @@ const UserWidget = ({ userId, picturePath }) => {
     firstName,
     lastName,
     location,
+    country,
     occupation,
+    occupationOption,
+    about,
     viewedProfile,
     impressions,
     friends,
@@ -84,12 +87,34 @@ const UserWidget = ({ userId, picturePath }) => {
       <Box p="1rem 0">
         <Box display="flex" alignItems="center" gap="1rem" mb="0.5rem">
           <LocationOnOutlined fontSize="large" sx={{ color: main }} />
-          <Typography color={medium}>{location}</Typography>
+          <Typography color={medium}>
+            {location} | {country}
+          </Typography>
         </Box>
         <Box display="flex" alignItems="center" gap="1rem">
           <WorkOutlineOutlined fontSize="large" sx={{ color: main }} />
-          <Typography color={medium}>{occupation}</Typography>
+          <Typography color={medium}>
+            {occupation ? occupation : occupationOption}
+          </Typography>
         </Box>
+      </Box>
+
+      <Divider />
+
+      <Box p="1rem 0">
+        <Typography fontSize="1rem" color={main} fontWeight="500" mb="1rem">
+          Social Profiles
+        </Typography>
+
+        <FlexBetween gap="1rem" mb="0.5rem">
+          <FlexBetween gap="1rem">
+            <Box>
+              <Typography color={main} fontWeight="500">
+                {about ? about : null}
+              </Typography>
+            </Box>
+          </FlexBetween>
+        </FlexBetween>
       </Box>
 
       <Divider />

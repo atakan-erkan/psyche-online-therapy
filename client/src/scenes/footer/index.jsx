@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
+  const mode = useSelector((state) => state.mode);
   if (window.location.pathname === "/login") {
     return null; // Sayfa yolu eşleşirse, Footer'ı render etmeyin
   }
@@ -31,7 +33,9 @@ const Footer = () => {
           </div>
 
           <div className="col-md-2 mb-4 mb-md-0 align-items-md-center footer-col-psyche">
-            <div>
+            <div
+              style={mode === "dark" ? { color: "white" } : { color: "black" }}
+            >
               <div className="footer-nav-title">Psyche</div>
               <ul className="nav flex-column">
                 <li className="nav-item">

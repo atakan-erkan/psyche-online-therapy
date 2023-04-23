@@ -3,14 +3,29 @@ import "./Footer.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Box } from "@mui/material";
+import { useSelector } from "react-redux";
 
 function HelpModal(props) {
+  const mode = useSelector((state) => state.mode);
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
-      <Modal.Header closeButton>
+      <Modal.Header
+        style={
+          mode === "dark"
+            ? { color: "white", backgroundColor: "black" }
+            : { color: "black" }
+        }
+        closeButton
+      >
         <Modal.Title id="contained-modal-title-vcenter">Yardım</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body
+        style={
+          mode === "dark"
+            ? { color: "white", backgroundColor: "black" }
+            : { color: "black" }
+        }
+      >
         <ol className="help-list">
           <li>
             <a href="tel:112">
@@ -50,7 +65,13 @@ function HelpModal(props) {
           </li>
         </ol>
       </Modal.Body>
-      <Modal.Footer>
+      <Modal.Footer
+        style={
+          mode === "dark"
+            ? { color: "white", backgroundColor: "black" }
+            : { color: "black" }
+        }
+      >
         <Button onClick={props.onHide}>Kapat</Button>
       </Modal.Footer>
     </Modal>
