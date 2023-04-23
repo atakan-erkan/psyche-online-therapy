@@ -205,7 +205,7 @@ const Form = () => {
                   />
                   <label
                     for="kullanıcı"
-                    className="btn col-md-12 fw-bold"
+                    className="btn col-12 col-md-12 fw-bold"
                     style={{ backgroundColor: "#175c4c", color: "#fff" }}
                   >
                     ÜYE KAYDI
@@ -224,7 +224,7 @@ const Form = () => {
                   />
                   <label
                     for="psikolog"
-                    className="btn col-md-12 fw-bold"
+                    className="btn col-12 col-md-12 fw-bold"
                     style={{ backgroundColor: "#175c4c", color: "#fff" }}
                   >
                     PSİKOLOG KAYDI
