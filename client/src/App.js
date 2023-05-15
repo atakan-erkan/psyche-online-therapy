@@ -17,6 +17,7 @@ import FooterInfo from "scenes/footer/FooterInfo";
 // import MainPage from "scenes/mainPage";
 import Nav from "scenes/navbar/Nav";
 import MainPage from "scenes/mainPage";
+import IsDoctor from "scenes/isDoctor";
 
 function App() {
   const mode = useSelector((state) => state.mode);
@@ -55,6 +56,10 @@ function App() {
             <Route
               path="/profile/:userId"
               element={isAuth ? <ProfilePage /> : <Navigate to="/login" />}
+            />
+            <Route
+              path="/isdoctor"
+              element={isAuth || isDoctor ? <IsDoctor /> : <Navigate to="/" />}
             />
             <Route
               path="/main"
