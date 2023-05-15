@@ -42,6 +42,7 @@ const Navbar = ({ userId }) => {
   const background = theme.palette.background.default;
   const primaryLight = theme.palette.primary.light;
   const fullName = `${user.firstName} ${user.lastName}`;
+  const userID = user._id ? `${user.firstName}.${user.lastName}` : user._id;
 
   //change nav soften when scrolling
   const [soften, setSoften] = useState(false);
@@ -138,7 +139,7 @@ const Navbar = ({ userId }) => {
               input={<InputBase />}
             >
               <MenuItem value={fullName}>
-                <Typography onClick={() => navigate(`/profile/${userId}`)}>
+                <Typography onClick={() => navigate(`/profile/${userID}`)}>
                   {fullName}
                 </Typography>
               </MenuItem>
@@ -185,16 +186,37 @@ const Navbar = ({ userId }) => {
             alignItems="center"
             gap="3rem"
           >
-            <IconButton
-              onClick={() => dispatch(setMode())}
-              sx={{ fontSize: "25px" }}
-            >
-              {theme.palette.mode === "dark" ? (
-                <DarkMode sx={{ fontSize: "25px" }} />
-              ) : (
-                <LightMode sx={{ color: dark, fontSize: "25px" }} />
-              )}
-            </IconButton>
+            <UserImage image={picturePath} size="60px" />
+            <FormControl variant="standard" value={fullName}>
+              <Select
+                value={fullName}
+                sx={{
+                  backgroundColor: "#175c4c",
+                  width: "150px",
+                  borderRadius: "0.25rem",
+                  textAlign: "center",
+                  p: "0.25rem 1rem",
+                  "& .MuiSvgIcon-root": {
+                    pl: "1rem",
+                    width: "3rem",
+                  },
+                  "& .MuiSelect-select:focus": {
+                    backgroundColor: "175c4c",
+                  },
+                }}
+                input={<InputBase />}
+              >
+                <MenuItem value={fullName}>
+                  <Typography onClick={() => navigate(`/profile/${userID}`)}>
+                    {fullName}
+                  </Typography>
+                </MenuItem>
+                <MenuItem onClick={() => dispatch(setLogout())}>
+                  Çıkış Yap
+                </MenuItem>
+              </Select>
+            </FormControl>
+
             <div className="container header-bg2">
               <div className="nav-navbar2">
                 <ul className="row nav-menu2">
@@ -216,34 +238,16 @@ const Navbar = ({ userId }) => {
                 </ul>
               </div>
             </div>
-            <FormControl variant="standard" value={fullName}>
-              <Select
-                value={fullName}
-                sx={{
-                  backgroundColor: neutralLight,
-                  width: "150px",
-                  borderRadius: "0.25rem",
-                  p: "0.25rem 1rem",
-                  "& .MuiSvgIcon-root": {
-                    pr: "0.25rem",
-                    width: "3rem",
-                  },
-                  "& .MuiSelect-select:focus": {
-                    backgroundColor: neutralLight,
-                  },
-                }}
-                input={<InputBase />}
-              >
-                <MenuItem value={fullName}>
-                  <Typography onClick={() => navigate(`/profile/${userId}`)}>
-                    {fullName}
-                  </Typography>
-                </MenuItem>
-                <MenuItem onClick={() => dispatch(setLogout())}>
-                  Çıkış Yap
-                </MenuItem>
-              </Select>
-            </FormControl>
+            <IconButton
+              onClick={() => dispatch(setMode())}
+              sx={{ fontSize: "30px", marginTop: "-35px", textAlign: "center" }}
+            >
+              {theme.palette.mode === "dark" ? (
+                <DarkMode sx={{ fontSize: "30px" }} />
+              ) : (
+                <LightMode sx={{ color: dark, fontSize: "30px" }} />
+              )}
+            </IconButton>
           </FlexBetween>
         </Box>
       )}
