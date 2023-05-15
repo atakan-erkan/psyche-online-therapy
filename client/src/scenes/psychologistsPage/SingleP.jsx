@@ -14,7 +14,7 @@ const SingleP = ({ user }) => {
         />
         <div className="card-body">
           <a
-            href="/#"
+            href="/psychologists"
             className=""
             style={{ textDecoration: "none", color: "inherit" }}
           >

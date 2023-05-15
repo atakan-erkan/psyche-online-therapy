@@ -40,7 +40,8 @@
 
 .header .nav-navbar-item {
   padding: 1rem;
-  font-weight: 500;
+  padding-top: 1.5rem;
+  font-weight: 600;
 }
 
 .nav-button {
@@ -137,9 +138,10 @@
     transition: 0.3s;
   }
   .nav-navbar-item2 {
-    margin: 1.5rem 0;
+    margin: 1.2rem 0;
     color: #175c4c;
     font-size: 20px;
+    font-weight: 600;
   }
   .nav-navbar-item2 a {
     color: #175c4c;
