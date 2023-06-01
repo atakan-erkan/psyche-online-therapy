@@ -1,3 +1,11 @@
 .profile {
   padding-top: 100px !important;
 }
+.btn-primary {
+  background-color: #175c4c;
+  border-color: #175c4c;
+}
+.btn-primary:hover {
+  background-color: #0b4336;
+  border-color: #0b4336;
+}
