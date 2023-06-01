@@ -18,6 +18,8 @@ import FooterInfo from "scenes/footer/FooterInfo";
 import Nav from "scenes/navbar/Nav";
 import MainPage from "scenes/mainPage";
 import IsDoctor from "scenes/isDoctor";
+import PostPage from "scenes/postPage";
+import Error404 from "scenes/error404/Error404";
 
 function App() {
   const mode = useSelector((state) => state.mode);
@@ -71,6 +73,17 @@ function App() {
                 )
               }
             />
+            <Route
+              path="/posts"
+              element={
+                isDoctor === "Psikolog" ? (
+                  <PostPage />
+                ) : (
+                  <Navigate to="/isdoctor" />
+                )
+              }
+            />
+            <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />
           <FooterInfo />

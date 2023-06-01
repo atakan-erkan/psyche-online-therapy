@@ -24,7 +24,7 @@ import {
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "state";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import FlexBetween from "components/FlexBetween";
 import "./Nav.css";
 import UserImage from "components/UserImage";
@@ -42,7 +42,8 @@ const Navbar = ({ userId }) => {
   const background = theme.palette.background.default;
   const primaryLight = theme.palette.primary.light;
   const fullName = `${user.firstName} ${user.lastName}`;
-  const userID = user._id ? `${user.firstName}.${user.lastName}` : user._id;
+  const userID = userId ? `${user.firstName}.${user.lastName}` : userId;
+  const isDoctor = useSelector((state) => state.user?.occupationOption);
 
   //change nav soften when scrolling
   const [soften, setSoften] = useState(false);
@@ -92,17 +93,24 @@ const Navbar = ({ userId }) => {
                 <a href="/#nasil-calisir">Nasıl Çalışır?</a>
               </li>
               <li className="nav-navbar-item ">
-                <a href="/aboutus">Hakkımızda</a>
+                <Link to="/aboutus">Hakkımızda</Link>
               </li>
               <li className="nav-navbar-item ">
-                <a href="/psychologists">Psikologlarımız</a>
+                <Link to="/psychologists">Psikologlarımız</Link>
               </li>
+              {isDoctor === "Psikolog" ? null : (
+                <li className="nav-navbar-item ">
+                  <Link to="/tests">Testler</Link>
+                </li>
+              )}
               <li className="nav-navbar-item ">
-                <a href="/tests">Testler</a>
+                <Link to="/faq">S.S.S</Link>
               </li>
-              <li className="nav-navbar-item ">
-                <a href="/faq">S.S.S</a>
-              </li>
+              {isDoctor === "Psikolog" ? (
+                <li className="nav-navbar-item ">
+                  <Link to="/posts">Paylaşımlar</Link>
+                </li>
+              ) : null}
             </ul>
           </div>
         </Typography>
@@ -143,7 +151,7 @@ const Navbar = ({ userId }) => {
                   {fullName}
                 </Typography>
               </MenuItem>
-              <MenuItem onClick={() => dispatch(setLogout())}>
+              <MenuItem onClick={() => dispatch(setLogout()) && navigate("/")}>
                 Çıkış Yap
               </MenuItem>
             </Select>
@@ -211,7 +219,9 @@ const Navbar = ({ userId }) => {
                     {fullName}
                   </Typography>
                 </MenuItem>
-                <MenuItem onClick={() => dispatch(setLogout())}>
+                <MenuItem
+                  onClick={() => dispatch(setLogout()) && navigate("/")}
+                >
                   Çıkış Yap
                 </MenuItem>
               </Select>
@@ -224,16 +234,16 @@ const Navbar = ({ userId }) => {
                     <a href="/#nasil-calisir">Nasıl Çalışır?</a>
                   </li>
                   <li className="col-12 col-md-12 nav-navbar-item2">
-                    <a href="/aboutus">Hakkımızda</a>
+                    <Link to="/aboutus">Hakkımızda</Link>
                   </li>
                   <li className="col-12 col-md-12 nav-navbar-item2">
-                    <a href="/psychologists">Psikologlarımız</a>
+                    <Link to="/psychologists">Psikologlarımız</Link>
                   </li>
                   <li className="col-12 col-md-12 nav-navbar-item2">
-                    <a href="/tests">Testler</a>
+                    <Link to="/tests">Testler</Link>
                   </li>
                   <li className="col-12 col-md-12 nav-navbar-item2">
-                    <a href="/faq">S.S.S</a>
+                    <Link to="/faq">S.S.S</Link>
                   </li>
                 </ul>
               </div>

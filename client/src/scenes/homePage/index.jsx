@@ -1,9 +1,13 @@
 import { Box } from "@mui/material";
 import "./Home.css";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const mode = useSelector((state) => state.mode);
+  const user = useSelector((state) => state.user);
+  const navigate = useNavigate();
+  const isAuth = Boolean(useSelector((state) => state.token));
   return (
     <Box>
       <main id="page-wrapper">
@@ -23,9 +27,14 @@ const HomePage = () => {
                     Alanında uzman bir psikolog ile
                     <br /> görüşmek ister misiniz?
                   </p>
-                  <a href="/home" className="btn  btn-primary">
+                  <button
+                    onClick={() =>
+                      navigate(isAuth ? `/profile/${user._id}` : "/login")
+                    }
+                    className="btn btn-primary"
+                  >
                     Hemen Başla
-                  </a>
+                  </button>
                 </div>
                 <div className="col-lg-6">
                   <img
@@ -215,9 +224,14 @@ const HomePage = () => {
                   İyi hissetmeye başlamak bu kadar kolay!
                 </p>
 
-                <a href="/home" className="btn btn-primary hero-btn">
+                <button
+                  onClick={() =>
+                    navigate(isAuth ? `/profile/${user._id}` : "/login")
+                  }
+                  className="btn btn-primary hero-btn"
+                >
                   Hemen Başla
-                </a>
+                </button>
               </div>
             </div>
           </div>
