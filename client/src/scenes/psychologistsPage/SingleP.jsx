@@ -1,9 +1,32 @@
 import React from "react";
 import "./Psychologists.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setFriends } from "state";
+import { useNavigate } from "react-router-dom";
+import { Box } from "@mui/material";
 
-const SingleP = ({ user }) => {
+const SingleP = ({ user, friendId }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const token = useSelector((state) => state.token);
+  const { _id } = useSelector((state) => state.user);
   const mode = useSelector((state) => state.mode);
+  const friends = useSelector((state) => state.user.friends);
+  const isFriend = friends.find((friend) => friend._id === user._id);
+  const patchFriend = async () => {
+    const response = await fetch(
+      `http://localhost:3001/users/${_id}/${user._id}`,
+      {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const data = await response.json();
+    dispatch(setFriends({ friends: data }));
+  };
   return (
     <div>
       <div className={`card single ${mode === "dark" && "bg-transparent"}`}>
@@ -13,15 +36,26 @@ const SingleP = ({ user }) => {
           alt="..."
         />
         <div className="card-body">
-          <a
-            href="/psychologists"
-            className=""
-            style={{ textDecoration: "none", color: "inherit" }}
+          <Box
+            onClick={() => {
+              navigate(`/profile/${user._id}`);
+              navigate(0);
+            }}
           >
-            <h5 className="card-title fw-bolder">
-              {user.firstName} {user.lastName}
-            </h5>
-          </a>
+            <p
+              className=""
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                cursor: "pointer",
+              }}
+            >
+              <h5 className="card-title fw-bolder">
+                {user.firstName} {user.lastName}
+              </h5>
+            </p>
+          </Box>
+
           <p className="text-primary">{user.occupationOption}</p>
           <h6 className="card-text">
             {user.location} | {user.country}
@@ -33,9 +67,15 @@ const SingleP = ({ user }) => {
           <i className="fa-sharp fa-solid fa-at"></i>
           <p className="card-text email">{user.email}</p>
           <p className="card-text mb-4">{user.phone}</p> */}
-          <a href="/psychologists" className="btn btn-primary">
-            DAHA FAZLA
-          </a>
+          {isFriend ? (
+            <button onClick={() => patchFriend()} className="btn btn-primary">
+              TAKİBİ BIRAK
+            </button>
+          ) : (
+            <button onClick={() => patchFriend()} className="btn btn-primary">
+              TAKİP ET
+            </button>
+          )}
         </div>
       </div>
     </div>
