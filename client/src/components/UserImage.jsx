@@ -5,11 +5,10 @@ import { useNavigate } from "react-router-dom";
 const UserImage = ({ image, size = "60px", userId }) => {
   const user = useSelector((state) => state.user);
   const navigate = useNavigate();
-  const userID = user._id ? `${user.firstName}.${user.lastName}` : user._id;
   return (
     <Box width={size} height={size}>
       <Typography
-        onClick={() => navigate(`/profile/${userID}`)}
+        onClick={() => navigate(`/profile/${user._id}`)}
         style={{ cursor: "pointer" }}
       >
         <img
