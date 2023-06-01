@@ -1,0 +1,27 @@
+.posts {
+  padding-top: 100px !important;
+}
+.btn-primary {
+  background-color: #175c4c;
+  border-color: #175c4c;
+}
+.btn-primary:hover {
+  background-color: #0b4336;
+  border-color: #0b4336;
+}
+
+.text1 {
+  font-size: 20px;
+}
+.slick-track {
+  opacity: 1;
+  width: 1320px;
+  transform: translate3d(0px, 0px, 0px);
+}
+.slick-active {
+  width: 440px;
+}
+#why-us {
+  font-weight: 700;
+  list-style: none;
+}
