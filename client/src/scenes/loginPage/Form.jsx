@@ -204,7 +204,7 @@ const Form = () => {
                     value="Kullanıcı"
                   />
                   <label
-                    for="kullanıcı"
+                    htmlFor="kullanıcı"
                     className="btn col-12 col-md-12 fw-bold"
                     style={{ backgroundColor: "#175c4c", color: "#fff" }}
                   >
@@ -223,7 +223,7 @@ const Form = () => {
                     value="Psikolog"
                   />
                   <label
-                    for="psikolog"
+                    htmlFor="psikolog"
                     className="btn col-12 col-md-12 fw-bold"
                     style={{ backgroundColor: "#175c4c", color: "#fff" }}
                   >
