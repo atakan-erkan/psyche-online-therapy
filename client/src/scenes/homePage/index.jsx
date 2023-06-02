@@ -54,90 +54,84 @@ const HomePage = () => {
                 <h2 className="fw-bold fs-2 mb-4">
                   Neden Psyche Tercih Etmelisiniz?
                 </h2>
-                <h3 className="fs-5 fs-sm-6 mb-5 fw-light mt-5">
-                  <li>
+
+                <ul className="fs-5 fs-sm-6 mb-5 fw-light mt-5">
+                  <li className="fs-5 fs-sm-6 mb-5 fw-light mt-5">
                     <i
                       className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
-                    ></i>{" "}
+                    />
                     Tüm terapistlerimizin yetkinliğini garanti ediyoruz.
                   </li>
-                </h3>
-                <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
-                  <li>
+
+                  <li className="fs-5 fs-sm-6 mb-5 fw-light">
                     <i
                       className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
-                    ></i>
+                    />
                     Danışanlarımızın terapi yolculuklarını teknoloji ile
                     kişiselleştiriyoruz.
                   </li>
-                </h3>
-                <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
-                  <li>
+
+                  <li className="fs-5 fs-sm-6 mb-5 fw-light">
                     <i
                       className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
-                    ></i>
+                    />
                     Terapiyi herkes için her yerden ve her an erişilebilir hale
                     getiriyoruz.
                   </li>
-                </h3>
-                <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
-                  <li>
+
+                  <li className="fs-5 fs-sm-6 mb-5 fw-light">
                     <i
                       className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
-                    ></i>
+                    />
                     Danışanlarımızın mahremiyetini %100 güvence altına alıyoruz.
                   </li>
-                </h3>
-                <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
-                  <li>
+
+                  <li className="fs-5 fs-sm-6 mb-5 fw-light">
                     <i
                       className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
-                    ></i>
+                    />
                     Psyche sayesinde, konforlu ev ortamınızda, istediğiniz zaman
                     kullanabileceğiniz bir kaynak sunar. Böylece, randevu almak
                     için vakit ayırmak veya seyahat etmek zorunda kalmazsınız.
                   </li>
-                </h3>
-                <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
-                  <li>
+
+                  <li className="fs-5 fs-sm-6 mb-5 fw-light">
                     <i
                       className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
-                    ></i>
+                    />
                     Sitemizde kayıtlı olan psikologlar, alanlarında deneyimli ve
                     yetkin kişilerdir. Bu nedenle, size en iyi kalitede
                     psikolojik destek hizmeti sunabilirler.
                   </li>
-                </h3>
-                <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
-                  <li>
+
+                  <li className="fs-5 fs-sm-6 mb-5 fw-light">
                     <i
                       className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
-                    ></i>
+                    />
                     Sitemize kayıt olan diğer kullanıcılarla etkileşim kurarak,
                     desteğe ihtiyaç duyduğunuzda destekleyici bir topluluk
                     bulabilirsiniz. Bu sayede, yalnız olmadığınızı ve herkesin
                     karşılaştığı sorunlar olduğunu anlayabilirsiniz.
                   </li>
-                </h3>
-                <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
-                  <li>
+
+                  <li className="fs-5 fs-sm-6 mb-5 fw-light">
                     <i
                       className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
-                    ></i>
+                    />
                     Sitemizde, psikolojik sağlık ve refah hakkında çeşitli
                     kaynaklar ve makaleler de bulunur. Bu kaynaklar, size farklı
                     konularda bilgi edinmenize yardımcı olabilir ve sağlıklı bir
                     hayat sürmenize katkıda bulunabilir.
                   </li>
-                </h3>
+                </ul>
               </div>
               <div className="col-12 col-md-5 offset-md-1">
                 <img src="img/about-us.svg" className="w-100" alt="" />
