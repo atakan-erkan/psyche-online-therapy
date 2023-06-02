@@ -49,11 +49,10 @@ const SingleP = ({ user, friendId }) => {
                 color: "inherit",
                 cursor: "pointer",
               }}
-            >
-              <h5 className="card-title fw-bolder">
-                {user.firstName} {user.lastName}
-              </h5>
-            </p>
+            ></p>
+            <h5 className="card-title fw-bolder">
+              {user.firstName} {user.lastName}
+            </h5>
           </Box>
 
           <p className="text-primary">{user.occupationOption}</p>
