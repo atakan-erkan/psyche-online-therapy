@@ -51,8 +51,8 @@ const AboutUsPage = () => {
             </div>
             <div className="row mt-5">
               <div className="col-md-12">
-                <h3 class="title">Biz Kimiz?</h3>
-                <p class="description">
+                <h3 className="title">Biz Kimiz?</h3>
+                <p className="description">
                   Psikolojik Destek, zorlu zamanlarda insanlara destek sağlamak
                   için bir araç olarak tasarlanmıştır. Burada, kullanıcılarımız
                   kayıt olarak, yaşadıkları sorunları paylaşabilir ve sadece
@@ -75,8 +75,8 @@ const AboutUsPage = () => {
           <div className="col-md-8">
             <div className="row mt-3">
               <div className="col-md-8">
-                <h3 class="title">Vizyonumuz</h3>
-                <p class="description">
+                <h3 className="title">Vizyonumuz</h3>
+                <p className="description">
                   Psikolojik Destek, insanların güçlü ve sağlıklı bir zihin ve
                   ruh haliyle yaşamasına yardımcı olmak için tasarlanmıştır.
                   Vizyonumuz, tüm kullanıcılarımızın, sağlıklı bir hayat
@@ -89,8 +89,8 @@ const AboutUsPage = () => {
             <div className="row mt-5">
               <div className="col-md-4"></div>
               <div className="col-md-8">
-                <h3 class="title">Misyonumuz</h3>
-                <p class="description">
+                <h3 className="title">Misyonumuz</h3>
+                <p className="description">
                   Misyonumuz, herkesin hayatında zaman zaman karşılaştığı
                   zorluklara yardımcı olmaktır. Bu nedenle, web sitemizde,
                   birçok farklı konuda uzmanlaşmış kayıtlı psikologlarımızın,
@@ -105,7 +105,7 @@ const AboutUsPage = () => {
                 <ul>
                   <li className="description mt-3">
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Kullanıcıların kayıt olup, zorluklarını paylaşabilecekleri
@@ -113,7 +113,7 @@ const AboutUsPage = () => {
                   </li>
                   <li className="description mt-3">
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Bu platformda, sadece kayıtlı psikologlar tarafından
@@ -121,7 +121,7 @@ const AboutUsPage = () => {
                   </li>
                   <li className="description mt-3">
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Kullanıcılarımıza, farklı konularda uzmanlaşmış
@@ -130,7 +130,7 @@ const AboutUsPage = () => {
                   </li>
                   <li className="description mt-3">
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Web sitemizde, psikolojik sağlık ve refah hakkında çeşitli
