@@ -57,7 +57,7 @@ const HomePage = () => {
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light mt-5">
                   <li>
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>{" "}
                     Tüm terapistlerimizin yetkinliğini garanti ediyoruz.
@@ -66,7 +66,7 @@ const HomePage = () => {
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Danışanlarımızın terapi yolculuklarını teknoloji ile
@@ -76,7 +76,7 @@ const HomePage = () => {
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Terapiyi herkes için her yerden ve her an erişilebilir hale
@@ -86,7 +86,7 @@ const HomePage = () => {
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Danışanlarımızın mahremiyetini %100 güvence altına alıyoruz.
@@ -95,7 +95,7 @@ const HomePage = () => {
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Psyche sayesinde, konforlu ev ortamınızda, istediğiniz zaman
@@ -106,7 +106,7 @@ const HomePage = () => {
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Sitemizde kayıtlı olan psikologlar, alanlarında deneyimli ve
@@ -117,7 +117,7 @@ const HomePage = () => {
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Sitemize kayıt olan diğer kullanıcılarla etkileşim kurarak,
@@ -129,7 +129,7 @@ const HomePage = () => {
                 <h3 className="fs-5 fs-sm-6 mb-5 fw-light">
                   <li>
                     <i
-                      class="fa-solid fa-check fa-lg me-2"
+                      className="fa-solid fa-check fa-lg me-2"
                       style={{ color: "#175c4c" }}
                     ></i>
                     Sitemizde, psikolojik sağlık ve refah hakkında çeşitli

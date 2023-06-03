@@ -193,8 +193,9 @@ const Navbar = ({ userId }) => {
             justifyContent="center"
             alignItems="center"
             gap="3rem"
+            marginTop="-40px"
           >
-            <UserImage image={picturePath} size="60px" />
+            <UserImage image={picturePath} size="100px" />
             <FormControl variant="standard" value={fullName}>
               <Select
                 value={fullName}
@@ -203,6 +204,7 @@ const Navbar = ({ userId }) => {
                   width: "150px",
                   borderRadius: "0.25rem",
                   textAlign: "center",
+                  marginTop: "-20px",
                   p: "0.25rem 1rem",
                   "& .MuiSvgIcon-root": {
                     pl: "1rem",
@@ -227,7 +229,10 @@ const Navbar = ({ userId }) => {
               </Select>
             </FormControl>
 
-            <div className="container header-bg2">
+            <div
+              className="container header-bg2"
+              style={{ marginTop: "-30px" }}
+            >
               <div className="nav-navbar2">
                 <ul className="row nav-menu2">
                   <li className="col-12 col-md-12 nav-navbar-item2">
@@ -239,18 +244,25 @@ const Navbar = ({ userId }) => {
                   <li className="col-12 col-md-12 nav-navbar-item2">
                     <Link to="/psychologists">Psikologlarımız</Link>
                   </li>
-                  <li className="col-12 col-md-12 nav-navbar-item2">
-                    <Link to="/tests">Testler</Link>
-                  </li>
+                  {isDoctor === "Psikolog" ? null : (
+                    <li className="nav-navbar-item ">
+                      <Link to="/tests">Testler</Link>
+                    </li>
+                  )}
                   <li className="col-12 col-md-12 nav-navbar-item2">
                     <Link to="/faq">S.S.S</Link>
                   </li>
+                  {isDoctor === "Psikolog" ? (
+                    <li className="col-12 col-md-12 nav-navbar-item2 ">
+                      <Link to="/posts">Paylaşımlar</Link>
+                    </li>
+                  ) : null}
                 </ul>
               </div>
             </div>
             <IconButton
               onClick={() => dispatch(setMode())}
-              sx={{ fontSize: "30px", marginTop: "-35px", textAlign: "center" }}
+              sx={{ fontSize: "30px", marginTop: "-60px", textAlign: "center" }}
             >
               {theme.palette.mode === "dark" ? (
                 <DarkMode sx={{ fontSize: "30px" }} />
