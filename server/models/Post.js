@@ -15,6 +15,10 @@ const postSchema = mongoose.Schema(
       required: true,
     },
     location: String,
+    occupationOption: {
+      type: String,
+      possibleValues: ["Psikolog", "Kullanıcı"],
+    },
     description: String,
     picturePath: String,
     userPicturePath: String,
@@ -23,7 +27,7 @@ const postSchema = mongoose.Schema(
       of: Boolean,
     },
     comments: {
-      type: Array,
+      type: [String],
       default: [],
     },
   },
