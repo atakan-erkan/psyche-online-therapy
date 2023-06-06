@@ -13,8 +13,10 @@ import userRoutes from "./routes/users.js";
 import postRoutes from "./routes/posts.js";
 import { register } from "./controllers/auth.js";
 import { createPost } from "./controllers/posts.js";
+
 import { verifyToken } from "./middleware/auth.js";
 import User from "./models/User.js";
+import Comment from "./models/Comment.js";
 import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
 
@@ -51,7 +53,38 @@ app.post("/posts", verifyToken, upload.single("picture"), createPost);
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
+app.post("/posts/:postId/comments", async (req, res) => {
+  try {
+    const { postId } = req.params;
+    const { text, userId, firstName, lastName, occupationOption } = req.body;
+    const user = await User.findById(userId);
+    // Veritabanında yorumu kaydetme işlemi
+    const comment = await Comment.create({
+      postId,
+      userId,
+      text,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      occupationOption: user.occupationOption,
+    });
 
+    // Gönderinin güncellenmiş versiyonunu almak için veritabanı işlemleri
+    const updatedPost = await Post.findByIdAndUpdate(
+      postId,
+      text,
+      firstName,
+      lastName,
+      occupationOption,
+      { $push: { comments: comment._id } }, // Yorumun referansını gönderiye eklemek için kullanılıyor
+      { new: true }
+    );
+
+    res.status(201).json(updatedPost);
+  } catch (error) {
+    console.error("Yorum kaydetme hatası:", error);
+    res.status(500).json({ error: "Yorum kaydetme hatası" });
+  }
+});
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
 mongoose

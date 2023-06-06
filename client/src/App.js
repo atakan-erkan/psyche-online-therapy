@@ -20,6 +20,7 @@ import MainPage from "scenes/mainPage";
 import IsDoctor from "scenes/isDoctor";
 import PostPage from "scenes/postPage";
 import Error404 from "scenes/error404/Error404";
+import ScrollTop from "components/ScrollTop";
 
 function App() {
   const mode = useSelector((state) => state.mode);
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollTop />
         <ThemeProvider theme={theme}>
           <CssBaseline />
           {isAuth ? <Navbar /> : <Nav />}
