@@ -63,7 +63,7 @@ const MyPostWidget = ({ picturePath, userId }) => {
   return (
     <WidgetWrapper>
       <FlexBetween gap="1.5rem">
-        <UserImage image={picturePath} />
+        <UserImage image={picturePath} size="80px" />
         <InputBase
           placeholder="Aklınızdan ne geçiyor..."
           onChange={(e) => setPost(e.target.value)}
