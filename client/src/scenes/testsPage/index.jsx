@@ -1,5 +1,6 @@
 import React from "react";
 import "./Tests.css";
+import { Link } from "react-router-dom";
 
 const TestsPage = () => {
   return (
@@ -39,16 +40,16 @@ const TestsPage = () => {
                         maddeye sahiptir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a href="/tests" class="btn btn-rounded btn-primary">
+                        <Link to="/istests" class="btn btn-rounded btn-primary">
                           Teste Başla
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="/tests">
+                      <Link to="/istests">
                         <img src="img/anxiety-test.svg" alt="" loading="lazy" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -66,20 +67,20 @@ const TestsPage = () => {
                         tarama yapan başarılı bir depresyon ölçeğidir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a href="/tests" class="btn btn-rounded btn-primary">
+                        <Link to="/istests" class="btn btn-rounded btn-primary">
                           Teste Başla
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="/tests">
+                      <Link to="/istests">
                         <img
                           src="img/depression-test.svg"
                           alt=""
                           loading="lazy"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -97,16 +98,16 @@ const TestsPage = () => {
                         amacıyla kullanılmaktadır.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a href="/tests" class="btn btn-rounded btn-primary">
+                        <Link to="/istests" class="btn btn-rounded btn-primary">
                           Teste Başla
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="/tests">
+                      <Link to="/istests">
                         <img src="img/ofke-testi.svg" alt="" loading="lazy" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -124,20 +125,20 @@ const TestsPage = () => {
                         DSM-IV TSSB semptomlarını sorgulayan bir ölçektir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a href="/tests" class="btn btn-rounded btn-primary">
+                        <Link to="/istests" class="btn btn-rounded btn-primary">
                           Teste Başla
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="/tests">
+                      <Link to="/istests">
                         <img
                           src="img/travma-sonrasi-stres-bozuklugu-testi.svg"
                           alt=""
                           loading="lazy"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -154,20 +155,20 @@ const TestsPage = () => {
                         kullanımını taramanın basit ve etkili bir yöntemidir.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a href="/tests" class="btn btn-rounded btn-primary">
+                        <Link to="/tests" class="btn btn-rounded btn-primary">
                           Teste Başla
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="/tests">
+                      <Link to="/istests">
                         <img
                           src="img/alkol-bagimliligi-testi.svg"
                           alt=""
                           loading="lazy"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -182,16 +183,16 @@ const TestsPage = () => {
                         ölçen 7 maddeyi içeren bir araçtır.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
-                        <a href="/tests" class="btn btn-rounded btn-primary">
+                        <Link to="/istests" class="btn btn-rounded btn-primary">
                           Teste Başla
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
                     <div class="test-list-image" aria-labelledby="heading0">
-                      <a href="/tests">
+                      <Link to="/istests">
                         <img src="img/stress-test.svg" alt="" loading="lazy" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
