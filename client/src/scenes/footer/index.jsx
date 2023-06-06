@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const Footer = () => {
+  const users = useSelector((state) => state.users);
   const mode = useSelector((state) => state.mode);
   if (window.location.pathname === "/login") {
     return null; // Sayfa yolu eşleşirse, Footer'ı render etmeyin
@@ -27,8 +28,8 @@ const Footer = () => {
               </a>
             </div>
             <div className="footer-company-description mt-4">
-              100'den fazla uzman psikolog kadromuzla ihtiyacınız olan her
-              konuda anında online terapi ve psikolojik danışmanlık!
+              {users.length}'den fazla uzman psikolog kadromuzla ihtiyacınız
+              olan her konuda anında online terapi ve psikolojik danışmanlık!
             </div>
           </div>
 
