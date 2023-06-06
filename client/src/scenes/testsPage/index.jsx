@@ -180,7 +180,7 @@ const TestsPage = () => {
                       </h2>
                       <div class="test-list-summary">
                         DASS21, son 1 haftadır mevcut olan stres belirtilerini
-                        ölçen 7 maddeyi içeren bir araçtır.
+                        ölçen 7 madde içeren bir araçtır.
                       </div>
                       <div class="mt-3" aria-labelledby="heading0">
                         <Link to="/istests" class="btn btn-rounded btn-primary">
