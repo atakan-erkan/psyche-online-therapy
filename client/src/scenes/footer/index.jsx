@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const users = useSelector((state) => state.users);
@@ -17,7 +18,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-4">
             <div className="footer-logo">
-              <a href="/">
+              <Link to="/">
                 <img
                   width="150"
                   height="150"
@@ -25,7 +26,7 @@ const Footer = () => {
                   src="img/psyche.png"
                   alt="Psyche Logo"
                 />
-              </a>
+              </Link>
             </div>
             <div className="footer-company-description mt-4">
               {users.length}'den fazla uzman psikolog kadromuzla ihtiyacınız
@@ -40,37 +41,37 @@ const Footer = () => {
               <div className="footer-nav-title">Psyche</div>
               <ul className="nav flex-column">
                 <li className="nav-item">
-                  <a className="nav-link" href="/#nasil-calisir">
+                  <Link className="nav-link" to="/#nasil-calisir">
                     Nasıl Çalışır?
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="/psychologists">
+                  <Link className="nav-link" to="/psychologists">
                     Psikologlar
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/aboutus">
+                  <Link className="nav-link" to="/aboutus">
                     Hakkımızda
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/tests">
+                  <Link className="nav-link" to="/tests">
                     Testler
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="/faq">
+                  <Link className="nav-link" to="/faq">
                     S.S.S.
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <Link className="nav-link" to="/">
                     Bize Ulaşın
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -80,36 +81,36 @@ const Footer = () => {
             <div className="footer-nav-title">Psikolojik Testler</div>
             <ul className="nav flex-column">
               <li className="nav-item">
-                <a className="nav-link" href="/tests">
+                <Link className="nav-link" to="/tests">
                   Anksiyete (Kaygı) Testi
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/tests">
+                <Link className="nav-link" to="/tests">
                   Depresyon Testi
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/tests">
+                <Link className="nav-link" to="/tests">
                   Öfke Testi
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/tests">
+                <Link className="nav-link" to="/tests">
                   Stres Testi
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/tests">
+                <Link className="nav-link" to="/tests">
                   Travma Sonrası Stres Bozukluğu Testi
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/tests">
+                <Link className="nav-link" to="/tests">
                   Alkol Bağımlılığı Testi
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -118,25 +119,25 @@ const Footer = () => {
             <div className="footer-nav-title">Şartlar ve Gizlilik</div>
             <ul className="nav flex-column">
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/">
                   Gizlilik Politikası
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/">
                   Kullanıcı Sözleşmesi
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/">
                   Çerez Politikası
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/">
                   Aydınlatma Metni
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="mt-2">

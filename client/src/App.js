@@ -21,7 +21,7 @@ import IsDoctor from "scenes/isDoctor";
 import PostPage from "scenes/postPage";
 import Error404 from "scenes/error404/Error404";
 import ScrollTop from "components/ScrollTop";
-
+import IsTests from "scenes/isTests";
 function App() {
   const mode = useSelector((state) => state.mode);
   const isDoctor = useSelector((state) => state.user?.occupationOption);
@@ -64,6 +64,10 @@ function App() {
             <Route
               path="/isdoctor"
               element={isAuth || isDoctor ? <IsDoctor /> : <Navigate to="/" />}
+            />
+            <Route
+              path="/istests"
+              element={isAuth || isDoctor ? <IsTests /> : <Navigate to="/" />}
             />
             <Route
               path="/main"
