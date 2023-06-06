@@ -16,7 +16,6 @@ import Footer from "scenes/footer";
 import FooterInfo from "scenes/footer/FooterInfo";
 // import MainPage from "scenes/mainPage";
 import Nav from "scenes/navbar/Nav";
-import MainPage from "scenes/mainPage";
 import IsDoctor from "scenes/isDoctor";
 import PostPage from "scenes/postPage";
 import Error404 from "scenes/error404/Error404";
@@ -68,16 +67,6 @@ function App() {
             <Route
               path="/istests"
               element={isAuth || isDoctor ? <IsTests /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/main"
-              element={
-                isAuth && isDoctor === "Psikolog" ? (
-                  <MainPage />
-                ) : (
-                  <Navigate to="/login" />
-                )
-              }
             />
             <Route
               path="/posts"

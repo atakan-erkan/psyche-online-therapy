@@ -6,144 +6,144 @@ function Error404() {
   const navigate = useNavigate();
   return (
     <div id="error">
-      <div class="container-error container-star">
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-1"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
-        <div class="star-2"></div>
+      <div className="container-error container-star">
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-1"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
+        <div className="star-2"></div>
       </div>
-      <div class="container container-bird">
-        <div class="bird bird-anim">
-          <div class="bird-container">
-            <div class="wing wing-left">
-              <div class="wing-left-top"></div>
+      <div className="container container-bird">
+        <div className="bird bird-anim">
+          <div className="bird-container">
+            <div className="wing wing-left">
+              <div className="wing-left-top"></div>
             </div>
-            <div class="wing wing-right">
-              <div class="wing-right-top"></div>
-            </div>
-          </div>
-        </div>
-        <div class="bird bird-anim">
-          <div class="bird-container">
-            <div class="wing wing-left">
-              <div class="wing-left-top"></div>
-            </div>
-            <div class="wing wing-right">
-              <div class="wing-right-top"></div>
+            <div className="wing wing-right">
+              <div className="wing-right-top"></div>
             </div>
           </div>
         </div>
-        <div class="bird bird-anim">
-          <div class="bird-container">
-            <div class="wing wing-left">
-              <div class="wing-left-top"></div>
+        <div className="bird bird-anim">
+          <div className="bird-container">
+            <div className="wing wing-left">
+              <div className="wing-left-top"></div>
             </div>
-            <div class="wing wing-right">
-              <div class="wing-right-top"></div>
-            </div>
-          </div>
-        </div>
-        <div class="bird bird-anim">
-          <div class="bird-container">
-            <div class="wing wing-left">
-              <div class="wing-left-top"></div>
-            </div>
-            <div class="wing wing-right">
-              <div class="wing-right-top"></div>
+            <div className="wing wing-right">
+              <div className="wing-right-top"></div>
             </div>
           </div>
         </div>
-        <div class="bird bird-anim">
-          <div class="bird-container">
-            <div class="wing wing-left">
-              <div class="wing-left-top"></div>
+        <div className="bird bird-anim">
+          <div className="bird-container">
+            <div className="wing wing-left">
+              <div className="wing-left-top"></div>
             </div>
-            <div class="wing wing-right">
-              <div class="wing-right-top"></div>
-            </div>
-          </div>
-        </div>
-        <div class="bird bird-anim">
-          <div class="bird-container">
-            <div class="wing wing-left">
-              <div class="wing-left-top"></div>
-            </div>
-            <div class="wing wing-right">
-              <div class="wing-right-top"></div>
+            <div className="wing wing-right">
+              <div className="wing-right-top"></div>
             </div>
           </div>
         </div>
-        <div class="container-title">
-          <div class="title">
-            <div class="number">4</div>
-            <div class="moon">
-              <div class="face">
-                <div class="mouth"></div>
-                <div class="eyes">
-                  <div class="eye-left"></div>
-                  <div class="eye-right"></div>
+        <div className="bird bird-anim">
+          <div className="bird-container">
+            <div className="wing wing-left">
+              <div className="wing-left-top"></div>
+            </div>
+            <div className="wing wing-right">
+              <div className="wing-right-top"></div>
+            </div>
+          </div>
+        </div>
+        <div className="bird bird-anim">
+          <div className="bird-container">
+            <div className="wing wing-left">
+              <div className="wing-left-top"></div>
+            </div>
+            <div className="wing wing-right">
+              <div className="wing-right-top"></div>
+            </div>
+          </div>
+        </div>
+        <div className="bird bird-anim">
+          <div className="bird-container">
+            <div className="wing wing-left">
+              <div className="wing-left-top"></div>
+            </div>
+            <div className="wing wing-right">
+              <div className="wing-right-top"></div>
+            </div>
+          </div>
+        </div>
+        <div className="container-title">
+          <div className="title">
+            <div className="number">4</div>
+            <div className="moon">
+              <div className="face">
+                <div className="mouth"></div>
+                <div className="eyes">
+                  <div className="eye-left"></div>
+                  <div className="eye-right"></div>
                 </div>
               </div>
             </div>
-            <div class="number">4</div>
+            <div className="number">4</div>
           </div>
-          <div class="subtitle">
+          <div className="subtitle">
             Oops. Görünüşe göre yanlış bir yola sapmışsın.
           </div>
           <button className="error-btn" onClick={() => navigate(-1)}>
