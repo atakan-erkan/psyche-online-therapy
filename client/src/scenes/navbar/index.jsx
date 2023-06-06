@@ -245,7 +245,7 @@ const Navbar = ({ userId }) => {
                     <Link to="/psychologists">Psikologlarımız</Link>
                   </li>
                   {isDoctor === "Psikolog" ? null : (
-                    <li className="nav-navbar-item ">
+                    <li className="col-12 col-md-12 nav-navbar-item2 ">
                       <Link to="/tests">Testler</Link>
                     </li>
                   )}

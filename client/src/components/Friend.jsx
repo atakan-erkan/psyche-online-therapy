@@ -59,9 +59,11 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
           >
             {name}
           </Typography>
-          <Typography color={medium} fontSize="0.75rem">
-            {subtitle}
-          </Typography>
+          <FlexBetween gap="0.5rem">
+            <Typography color={medium} fontSize="0.75rem">
+              {subtitle}
+            </Typography>
+          </FlexBetween>
         </Box>
       </FlexBetween>
       <IconButton
