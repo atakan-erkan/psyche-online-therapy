@@ -1,4 +1,3 @@
-# psyche-online-therapy
 PSYCHE | ONLINE THERAPY
 
 ![Ekran görüntüsü 2023-06-14 175655](https://github.com/atakan-erkan/psyche-online-therapy/assets/108596480/79cd13fd-fb3e-42e7-b560-52f26d5a717c)
