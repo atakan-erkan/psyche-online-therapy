@@ -36,7 +36,7 @@ function App() {
           <CssBaseline />
           {isAuth ? <Navbar /> : <Nav />}
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<MainPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route
               path="/home"

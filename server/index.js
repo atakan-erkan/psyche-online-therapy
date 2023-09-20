@@ -85,7 +85,7 @@ app.post("/posts/:postId/comments", async (req, res) => {
     res.status(500).json({ error: "Yorum kaydetme hatası" });
   }
 });
-/* MONGOOSE SETUP */
+/* MONGOOSE */
 const PORT = process.env.PORT || 6001;
 mongoose
   .connect(process.env.MONGO_URL, {
@@ -95,7 +95,6 @@ mongoose
   .then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
-    /* ADD DATA ONE TIME */
     // User.insertMany(users);
     // Post.insertMany(posts);
   })
