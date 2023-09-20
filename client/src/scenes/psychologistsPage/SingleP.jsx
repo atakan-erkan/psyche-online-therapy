@@ -15,7 +15,7 @@ const SingleP = ({ user, friendId }) => {
   const isFriend = friends.find((friend) => friend._id === user._id);
   const patchFriend = async () => {
     const response = await fetch(
-      `http://localhost:3001/users/${_id}/${user._id}`,
+      `https://psyche-online-therapy.onrender.com/users/${_id}/${user._id}`,
       {
         method: "PATCH",
         headers: {
@@ -31,7 +31,7 @@ const SingleP = ({ user, friendId }) => {
     <div>
       <div className={`card single ${mode === "dark" && "bg-transparent"}`}>
         <img
-          src={`http://localhost:3001/assets/${user.picturePath}`}
+          src={`https://psyche-online-therapy.onrender.com/assets/${user.picturePath}`}
           className="card-img-top rounded-circle shadow-4-strong"
           alt="..."
         />
