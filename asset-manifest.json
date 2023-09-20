@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/psyche-online-therapy/static/css/main.6855d0d4.css",
+    "main.js": "/psyche-online-therapy/static/js/main.de287788.js",
+    "static/media/psychelogo.png": "/psyche-online-therapy/static/media/psychelogo.158ac3c3479617374d32.png",
+    "index.html": "/psyche-online-therapy/index.html",
+    "main.6855d0d4.css.map": "/psyche-online-therapy/static/css/main.6855d0d4.css.map",
+    "main.de287788.js.map": "/psyche-online-therapy/static/js/main.de287788.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6855d0d4.css",
+    "static/js/main.de287788.js"
+  ]
+}
