@@ -28,7 +28,7 @@ import { useNavigate, Link } from "react-router-dom";
 import FlexBetween from "components/FlexBetween";
 import "./Nav.css";
 import UserImage from "components/UserImage";
-
+import Logo from "../../assets/images/psychelogo.png";
 const Navbar = ({ userId }) => {
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
   const dispatch = useDispatch();
@@ -81,9 +81,9 @@ const Navbar = ({ userId }) => {
           }}
         >
           {isNonMobileScreens ? (
-            <img src="img/psychelogo.png" alt="" width={300} />
+            <img src={Logo} alt="" width={300} />
           ) : (
-            <img src="img/psychelogo.png" alt="" width={235} />
+            <img src={Logo} alt="" width={235} />
           )}
         </Typography>
         <Typography fontWeight="bold" fontSize="clamp(1rem, 2rem, 2.25rem)">

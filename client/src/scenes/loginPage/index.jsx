@@ -1,6 +1,6 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
-
+import LoginLogo from "../../assets/images/psychelogo.png";
 const LoginPage = () => {
   const theme = useTheme();
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
@@ -10,7 +10,7 @@ const LoginPage = () => {
       <Box width="100%" p="1rem 6%" textAlign="center" marginTop={10}>
         <a href="/">
           <img
-            src="img/psychelogo.png"
+            src={LoginLogo}
             width={isNonMobileScreen ? 500 : 300}
             alt="PSYCHE"
           />
