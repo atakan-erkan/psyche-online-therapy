@@ -1,6 +1,12 @@
 import React from "react";
 import "./Tests.css";
 import { Link } from "react-router-dom";
+import AnksiyeteImg from "../../assets/images/anxiety-test.svg";
+import DepresyonImg from "../../assets/images/depression-test.svg";
+import OfkeImg from "../../assets/images/ofke-testi.svg";
+import TravmaImg from "../../assets/images/travma-sonrasi-stres-bozuklugu-testi.svg";
+import AlkolBagimligiliImg from "../../assets/images/alkol-bagimliligi-testi.svg";
+import StresImg from "../../assets/images/stress-test.svg";
 
 const TestsPage = () => {
   return (
@@ -48,7 +54,7 @@ const TestsPage = () => {
 
                     <div class="test-list-image" aria-labelledby="heading0">
                       <Link to="/istests">
-                        <img src="img/anxiety-test.svg" alt="" loading="lazy" />
+                        <img src={AnksiyeteImg} alt="" loading="lazy" />
                       </Link>
                     </div>
                   </div>
@@ -75,11 +81,7 @@ const TestsPage = () => {
 
                     <div class="test-list-image" aria-labelledby="heading0">
                       <Link to="/istests">
-                        <img
-                          src="img/depression-test.svg"
-                          alt=""
-                          loading="lazy"
-                        />
+                        <img src={DepresyonImg} alt="" loading="lazy" />
                       </Link>
                     </div>
                   </div>
@@ -106,7 +108,7 @@ const TestsPage = () => {
 
                     <div class="test-list-image" aria-labelledby="heading0">
                       <Link to="/istests">
-                        <img src="img/ofke-testi.svg" alt="" loading="lazy" />
+                        <img src={OfkeImg} alt="" loading="lazy" />
                       </Link>
                     </div>
                   </div>
@@ -133,11 +135,7 @@ const TestsPage = () => {
 
                     <div class="test-list-image" aria-labelledby="heading0">
                       <Link to="/istests">
-                        <img
-                          src="img/travma-sonrasi-stres-bozuklugu-testi.svg"
-                          alt=""
-                          loading="lazy"
-                        />
+                        <img src={TravmaImg} alt="" loading="lazy" />
                       </Link>
                     </div>
                   </div>
@@ -163,11 +161,7 @@ const TestsPage = () => {
 
                     <div class="test-list-image" aria-labelledby="heading0">
                       <Link to="/istests">
-                        <img
-                          src="img/alkol-bagimliligi-testi.svg"
-                          alt=""
-                          loading="lazy"
-                        />
+                        <img src={AlkolBagimligiliImg} alt="" loading="lazy" />
                       </Link>
                     </div>
                   </div>
@@ -191,7 +185,7 @@ const TestsPage = () => {
 
                     <div class="test-list-image" aria-labelledby="heading0">
                       <Link to="/istests">
-                        <img src="img/stress-test.svg" alt="" loading="lazy" />
+                        <img src={StresImg} alt="" loading="lazy" />
                       </Link>
                     </div>
                   </div>
