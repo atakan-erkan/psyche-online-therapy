@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./FAQ.css";
-
+import DepresyonImg from "../../assets/images/depression-test.svg";
 const FaqPage = () => {
   const [answersVisible, setAnswersVisible] = useState([false, false, false]);
   const [name, setName] = useState("");
@@ -145,7 +145,7 @@ const FaqPage = () => {
                 </div>
                 <div className="col-md-7">
                   <img
-                    src="/img/depression-test.svg"
+                    src={DepresyonImg}
                     className=" mt-4"
                     id="img"
                     alt="resim"

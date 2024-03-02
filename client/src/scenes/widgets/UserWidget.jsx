@@ -11,6 +11,8 @@ import WidgetWrapper from "components/WidgetWrapper";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Linkedin from "../../assets/images/linkedin.png";
+import Twitter from "../../assets/images/twitter.png";
 
 const UserWidget = ({ userId, picturePath }) => {
   const [user, setUser] = useState(null);
@@ -145,7 +147,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
         <FlexBetween gap="1rem" mb="0.5rem">
           <FlexBetween gap="1rem">
-            <img src="../assets/twitter.png" alt="twitter" />
+            <img src={Twitter} alt="twitter" />
             <Box>
               <Typography color={main} fontWeight="500">
                 Twitter
@@ -158,7 +160,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
         <FlexBetween gap="1rem">
           <FlexBetween gap="1rem">
-            <img src="../assets/linkedin.png" alt="linkedin" />
+            <img src={Linkedin} alt="linkedin" />
             <Box>
               <Typography color={main} fontWeight="500">
                 Linkedin

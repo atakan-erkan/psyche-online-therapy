@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import "./IsDoctor.css";
 import { useSelector } from "react-redux";
+import PsycheLogo from "../../assets/images/psyche.png";
 
 const IsDoctor = () => {
   return (
@@ -26,11 +27,7 @@ const IsDoctor = () => {
                   </p>
                 </div>
                 <div className="col-lg-6">
-                  <img
-                    src="img/psyche.png"
-                    className="w-100"
-                    alt="PSYCHE LOGO"
-                  />
+                  <img src={PsycheLogo} className="w-100" alt="PSYCHE LOGO" />
                 </div>
               </div>
             </div>
