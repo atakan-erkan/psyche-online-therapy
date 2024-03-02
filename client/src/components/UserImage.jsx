@@ -16,7 +16,7 @@ const UserImage = ({ image, size = "60px", userId }) => {
           width={size}
           height={size}
           alt="user"
-          src={`https://psyche-online-therapy.onrender.com/assets/${image}`}
+          src={`http://localhost:3001/assets/${image}`}
         />
       </Typography>
     </Box>
