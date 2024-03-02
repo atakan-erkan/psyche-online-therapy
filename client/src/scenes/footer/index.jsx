@@ -1,7 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
+import FooterLogo from "../../assets/images/psyche.png";
+import FooterQR from "../../assets/images/qrcode_www.psychetherapy.online.png";
 const Footer = () => {
   const users = useSelector((state) => state.users);
   const mode = useSelector((state) => state.mode);
@@ -23,7 +24,7 @@ const Footer = () => {
                   width="150"
                   height="150"
                   loading="lazy"
-                  src="img/psyche.png"
+                  src={FooterLogo}
                   alt="Psyche Logo"
                 />
               </Link>
@@ -143,7 +144,7 @@ const Footer = () => {
             <div className="mt-2">
               <img
                 loading="lazy"
-                src="img/qrcode_www.psychetherapy.online.png"
+                src={FooterQR}
                 width="70"
                 height="81"
                 alt="PSYCHE QR"

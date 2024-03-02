@@ -1,11 +1,14 @@
 import React from "react";
 import "./AboutUs.css";
+import AboutHeaderImg from "../../assets/images/Wilhelm Wundt.png";
+import AboutFirstAsideImg from "../../assets/images/psyche-mit.jpg";
+import AboutSecondAsideImg from "../../assets/images/psyche-mit2.jpg";
 
 const AboutUsPage = () => {
   return (
     <div className="about">
       <div className="picture-info">
-        <img src="/img/Wilhelm Wundt.png" alt="WW" />
+        <img src={AboutHeaderImg} alt="WW" />
         <p>
           <i>
             *Psikolojinin tarihi çok eski olsa da, modern psikolojinin kurucusu
@@ -22,7 +25,7 @@ const AboutUsPage = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-4 mit">
-            <img src="img/psyche-mit.jpg" className="rounded-3" alt="" />
+            <img src={AboutFirstAsideImg} className="rounded-3" alt="" />
             <p>
               <i>
                 *Mitolojide <b>"Psyche"</b> Tasviri
@@ -141,7 +144,7 @@ const AboutUsPage = () => {
             </div>
           </div>
           <div className="col-md-4 mit">
-            <img src="img/psyche-mit2.jpg" className="rounded-3" alt="" />
+            <img src={AboutSecondAsideImg} className="rounded-3" alt="" />
             <p>
               <i>
                 *Mitolojide <b>"Psyche"</b> Tasviri

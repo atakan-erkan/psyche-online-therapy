@@ -1,5 +1,7 @@
 import { Box } from "@mui/material";
 import "./Main.css";
+import HeaderLogo from "../../assets/images/psyche.png";
+import AsideImg from "../../assets/images/about-us.svg";
 
 const MainPage = () => {
   return (
@@ -26,11 +28,7 @@ const MainPage = () => {
                   </a>
                 </div>
                 <div className="col-lg-6">
-                  <img
-                    src="img/psyche.png"
-                    className="w-100"
-                    alt="PSYCHE LOGO"
-                  />
+                  <img src={HeaderLogo} className="w-100" alt="PSYCHE LOGO" />
                 </div>
               </div>
             </div>
@@ -129,7 +127,7 @@ const MainPage = () => {
                 </h3>
               </div>
               <div className="col-12 col-md-5 offset-md-1">
-                <img src="img/about-us.svg" className="w-100" alt="" />
+                <img src={AsideImg} className="w-100" alt="" />
               </div>
             </div>
           </div>
